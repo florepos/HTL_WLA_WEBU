@@ -4,7 +4,8 @@
 
 #Thumbnails:
 Thumbs.db
-
+#Configuration files for Doxygen
+Doxyfile
 # mstest test results
 TestResults
 
