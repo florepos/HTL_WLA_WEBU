@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_webuntis_a_p_i_1_1_types_1_1_subject" kind="struct" prot="public">
+    <compoundname>WebuntisAPI::Types::Subject</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_subject_1ae9e339f8fc82608d03dcd222fc03e81a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WebuntisAPI.Types.Subject.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing id </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="40" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_subject_1a52c74e223123db5b7add56d0a6ad0708" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String WebuntisAPI.Types.Subject.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing short subject e.g. D </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="41" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_subject_1a07f2f0280c83cc595fcd18f8c291d9a0" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String WebuntisAPI.Types.Subject.longname</definition>
+        <argsstring></argsstring>
+        <name>longname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing subject e.g. Deutsch </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="42" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="struct_webuntis_a_p_i_1_1_types_1_1_subject" kindref="compound">WebuntisAPI::Types::Subject</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Structure to save information about a teacher </para>    </detaileddescription>
+    <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="39" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="38" bodyend="43"/>
+    <listofallmembers>
+      <member refid="struct_webuntis_a_p_i_1_1_types_1_1_subject_1ae9e339f8fc82608d03dcd222fc03e81a" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::Subject</scope><name>id</name></member>
+      <member refid="struct_webuntis_a_p_i_1_1_types_1_1_subject_1a07f2f0280c83cc595fcd18f8c291d9a0" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::Subject</scope><name>longname</name></member>
+      <member refid="struct_webuntis_a_p_i_1_1_types_1_1_subject_1a52c74e223123db5b7add56d0a6ad0708" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::Subject</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

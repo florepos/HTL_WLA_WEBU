@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_webuntis_a_p_i_1_1_types_1_1_department" kind="struct" prot="public">
+    <compoundname>WebuntisAPI::Types::Department</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_department_1a543d6d34378c9649d7cf72ea88bfbb61" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WebuntisAPI.Types.Department.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing id </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="48" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_department_1aa2a3990003b54bc6a9946be1c2ab5572" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String WebuntisAPI.Types.Department.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing short name of department </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="49" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_department_1ac9d9a76d977fbdccfd18a7f88c88fbac" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String WebuntisAPI.Types.Department.longname</definition>
+        <argsstring></argsstring>
+        <name>longname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing long name of department </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="50" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="struct_webuntis_a_p_i_1_1_types_1_1_department" kindref="compound">WebuntisAPI::Types::Department</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Structure to save information about a <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_department" kindref="compound">Department</ref> - really not important but API gives it </para>    </detaileddescription>
+    <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="47" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="46" bodyend="51"/>
+    <listofallmembers>
+      <member refid="struct_webuntis_a_p_i_1_1_types_1_1_department_1a543d6d34378c9649d7cf72ea88bfbb61" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::Department</scope><name>id</name></member>
+      <member refid="struct_webuntis_a_p_i_1_1_types_1_1_department_1ac9d9a76d977fbdccfd18a7f88c88fbac" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::Department</scope><name>longname</name></member>
+      <member refid="struct_webuntis_a_p_i_1_1_types_1_1_department_1aa2a3990003b54bc6a9946be1c2ab5572" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::Department</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

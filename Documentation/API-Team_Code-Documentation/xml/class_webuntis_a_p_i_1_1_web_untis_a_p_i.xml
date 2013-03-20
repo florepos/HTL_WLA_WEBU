@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_webuntis_a_p_i_1_1_web_untis_a_p_i" kind="class" prot="public">
+    <compoundname>WebuntisAPI::WebUntisAPI</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1aaf1ebc41017119125b684cbd1dd2c52b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_webuntis_a_p_i_1_1_web_untis_connector" kindref="compound">WebUntisConnector</ref></type>
+        <definition>WebUntisConnector WebuntisAPI.WebUntisAPI.connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="141" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="140" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="139" bodyend="173"/>
+    <listofallmembers>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1aaf1ebc41017119125b684cbd1dd2c52b" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>connection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

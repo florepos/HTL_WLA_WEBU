@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="struct_webuntis_a_p_i_1_1_types_1_1_teacher" kind="struct" prot="public">
+    <compoundname>WebuntisAPI::Types::Teacher</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_teacher_1a821dc00e09892946f7aa65066147b219" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int WebuntisAPI.Types.Teacher.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="22" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_teacher_1a60aa3278d7509fea3a5fd3e9d7e12e91" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String WebuntisAPI.Types.Teacher.firstname</definition>
+        <argsstring></argsstring>
+        <name>firstname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing firstname </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="23" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_teacher_1add1e2bb30e82e7ff0b14b3d497c44fcc" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String WebuntisAPI.Types.Teacher.lastname</definition>
+        <argsstring></argsstring>
+        <name>lastname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing lastname </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="24" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_teacher_1ad4fe004e4ae11294e487a92947f3ff41" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String WebuntisAPI.Types.Teacher.shortname</definition>
+        <argsstring></argsstring>
+        <name>shortname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing the shortname e.g. LED </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="25" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="struct_webuntis_a_p_i_1_1_types_1_1_teacher" kindref="compound">WebuntisAPI::Types::Teacher</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>The Structure to save information about a teacher </para>    </detaileddescription>
+    <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="21" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="20" bodyend="26"/>
+    <listofallmembers>
+      <member refid="struct_webuntis_a_p_i_1_1_types_1_1_teacher_1a60aa3278d7509fea3a5fd3e9d7e12e91" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::Teacher</scope><name>firstname</name></member>
+      <member refid="struct_webuntis_a_p_i_1_1_types_1_1_teacher_1a821dc00e09892946f7aa65066147b219" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::Teacher</scope><name>id</name></member>
+      <member refid="struct_webuntis_a_p_i_1_1_types_1_1_teacher_1add1e2bb30e82e7ff0b14b3d497c44fcc" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::Teacher</scope><name>lastname</name></member>
+      <member refid="struct_webuntis_a_p_i_1_1_types_1_1_teacher_1ad4fe004e4ae11294e487a92947f3ff41" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::Teacher</scope><name>shortname</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

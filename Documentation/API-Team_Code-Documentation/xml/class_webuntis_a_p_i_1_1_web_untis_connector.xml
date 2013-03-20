@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_webuntis_a_p_i_1_1_web_untis_connector" kind="class" prot="public">
+    <compoundname>WebuntisAPI::WebUntisConnector</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_connector_1aa2ecece1f54ff8525e91144bfc1f77e3" prot="private" static="no" mutable="no">
+        <type>HttpWebRequest</type>
+        <definition>HttpWebRequest WebuntisAPI.WebUntisConnector.wr</definition>
+        <argsstring></argsstring>
+        <name>wr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing Webrequest to connect to WebUntis </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="86" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_connector_1aeb598866c0fb4702c0543c7c333a8327" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String WebuntisAPI.WebUntisConnector.User</definition>
+        <argsstring></argsstring>
+        <name>User</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing Username of WebUntis </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="87" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_connector_1a3d1c8a47e4187884e858344d402dfe05" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String WebuntisAPI.WebUntisConnector.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing Password for user </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="88" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_connector_1a8c4c4379726cd94773d08bf901c95245" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String WebuntisAPI.WebUntisConnector.SessionID</definition>
+        <argsstring></argsstring>
+        <name>SessionID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing Sessionid for Connection </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="89" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_connector_1ab7c6564d1ba0e7c2e0787573cdcaabd9" prot="private" static="no" mutable="no">
+        <type>Uri</type>
+        <definition>Uri WebuntisAPI.WebUntisConnector.connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing Connectionstring </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="90" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_connector_1ab1df017bfe02cdf931eed93bc00c6d8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WebuntisAPI.WebUntisConnector.WebUntisConnector</definition>
+        <argsstring>(String connection, String User, String Password)</argsstring>
+        <name>WebUntisConnector</name>
+        <param>
+          <type>String</type>
+          <declname>connection</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>User</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>Password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="92" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="91" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="85" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="84" bodyend="138"/>
+    <listofallmembers>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1ab7c6564d1ba0e7c2e0787573cdcaabd9" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>connection</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1a3d1c8a47e4187884e858344d402dfe05" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>Password</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1a8c4c4379726cd94773d08bf901c95245" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>SessionID</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1aeb598866c0fb4702c0543c7c333a8327" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>User</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1ab1df017bfe02cdf931eed93bc00c6d8b" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>WebUntisConnector</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1aa2ecece1f54ff8525e91144bfc1f77e3" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>wr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

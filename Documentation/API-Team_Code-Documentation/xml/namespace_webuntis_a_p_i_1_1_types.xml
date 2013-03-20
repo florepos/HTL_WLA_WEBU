@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespace_webuntis_a_p_i_1_1_types" kind="namespace">
+    <compoundname>WebuntisAPI::Types</compoundname>
+    <innerclass refid="struct_webuntis_a_p_i_1_1_types_1_1_teacher" prot="public">WebuntisAPI::Types::Teacher</innerclass>
+    <innerclass refid="struct_webuntis_a_p_i_1_1_types_1_1_klasse" prot="public">WebuntisAPI::Types::Klasse</innerclass>
+    <innerclass refid="struct_webuntis_a_p_i_1_1_types_1_1_subject" prot="public">WebuntisAPI::Types::Subject</innerclass>
+    <innerclass refid="struct_webuntis_a_p_i_1_1_types_1_1_department" prot="public">WebuntisAPI::Types::Department</innerclass>
+    <innerclass refid="struct_webuntis_a_p_i_1_1_types_1_1_holiday" prot="public">WebuntisAPI::Types::Holiday</innerclass>
+    <innerclass refid="struct_webuntis_a_p_i_1_1_types_1_1_schoolyear" prot="public">WebuntisAPI::Types::Schoolyear</innerclass>
+    <innerclass refid="struct_webuntis_a_p_i_1_1_types_1_1_time_table_element" prot="public">WebuntisAPI::Types::TimeTableElement</innerclass>
+    <briefdescription>
+<para><ref refid="namespace_webuntis_a_p_i_1_1_types" kindref="compound">WebuntisAPI::Types</ref> Namespase. </para>    </briefdescription>
+    <detaileddescription>
+<para>This contains the structure-variables for x-Change with the APP (Coding) </para>    </detaileddescription>
+    <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="17"/>
+  </compounddef>
+</doxygen>

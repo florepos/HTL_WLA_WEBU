@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['id',['id',['../struct_webuntis_a_p_i_1_1_types_1_1_klasse.html#a0c8d6c1ce71142b67d20df2c818bbc75',1,'WebuntisAPI.Types.Klasse.id()'],['../struct_webuntis_a_p_i_1_1_types_1_1_subject.html#ae9e339f8fc82608d03dcd222fc03e81a',1,'WebuntisAPI.Types.Subject.id()'],['../struct_webuntis_a_p_i_1_1_types_1_1_department.html#a543d6d34378c9649d7cf72ea88bfbb61',1,'WebuntisAPI.Types.Department.id()'],['../struct_webuntis_a_p_i_1_1_types_1_1_holiday.html#af850132078feaf8f2395e20a0800d74a',1,'WebuntisAPI.Types.Holiday.id()'],['../struct_webuntis_a_p_i_1_1_types_1_1_schoolyear.html#a5919885c6ffc12918b27fb9f13fd2c79',1,'WebuntisAPI.Types.Schoolyear.id()'],['../struct_webuntis_a_p_i_1_1_types_1_1_time_table_element.html#a3d6f4d06843dbad8ddbdbd21e2aea0b6',1,'WebuntisAPI.Types.TimeTableElement.id()']]]
+];

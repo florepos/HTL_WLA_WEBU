@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespace_webuntis_a_p_i" kind="namespace">
+    <compoundname>WebuntisAPI</compoundname>
+    <innerclass refid="class_webuntis_a_p_i_1_1_web_untis_connector" prot="public">WebuntisAPI::WebUntisConnector</innerclass>
+    <innerclass refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i" prot="public">WebuntisAPI::WebUntisAPI</innerclass>
+    <innernamespace refid="namespace_webuntis_a_p_i_1_1_types">WebuntisAPI::Types</innernamespace>
+    <briefdescription>
+<para><ref refid="namespace_webuntis_a_p_i" kindref="compound">WebuntisAPI</ref> Nampespace. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is the Main Namespace of the WebUntis API. It contains the Namespace of the <ref refid="namespace_webuntis_a_p_i_1_1_types" kindref="compound">Types</ref> and classes for communication width WebUntis </para>    </detaileddescription>
+    <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="13"/>
+  </compounddef>
+</doxygen>
