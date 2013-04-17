@@ -12,7 +12,9 @@ using System.Windows.Shapes;
 namespace AppTestSolution.otherClasses
 {
     /// <summary>
-    /// This Class represents a 
+    /// This Class represents a Subject with one or more Teachers, with on ore
+    /// more Schoolclasses, one Schoolhour long and with all information about
+    /// Tests, Supplierungen and Class eliminations.
     /// </summary>
     public class Subject
     {
@@ -35,7 +37,7 @@ namespace AppTestSolution.otherClasses
                         String[] strClass,
                         Boolean bolTest,
                         Boolean bolSup,
-                        Boolean bolElimination,
+                        Boolean bolElimination
                       )
         {
 
