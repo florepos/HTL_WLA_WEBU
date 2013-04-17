@@ -61,7 +61,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="APP\AppClass.cs" />
+    <Compile Include="APP\Converter.cs" />
     <Compile Include="APP\Subject.cs" />
     <Compile Include="Design\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

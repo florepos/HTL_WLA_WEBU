@@ -25,10 +25,33 @@ namespace AppTestSolution.otherClasses
 
 
         #endregion
+
+        #region Methods
+       
+        private Subject makeSubjectObject()
+        {
+
+            return null;
+        }
+
+        private void makeTimetable(int weeknumber)
+        {
+
+        }
+
+        public Subject[][][] getWeekTimetable(int weeknumber)
+        {
+            return null;
+        }
+
+
+        #endregion
+
+
         Object classname = testclass;
        
         //Teacher
-        String firstname;
+        String strFirstname;
         String lastname;
         String shortname;
 
@@ -39,34 +62,26 @@ namespace AppTestSolution.otherClasses
 
         classname cn = new classname();
 
-        #region Methods
-       
-        private Subject makeSubjectObject()
+        cn.getTeacher(int id)
         {
-
-            return Subject;
+            firstname = cn.GetValue(firstname);
+            lastname = cn.GetValue(lastname);
+            shortname = cn.GetValue(shortname);
         }
-
-        #endregion
-        cn.getTeacher(int id){
-        firstname = cn.GetValue(firstname);
-        lastname = cn.GetValue(lastname);
-        shortname = cn.GetValue(shortname);
-    }
         cn.getKlasse(int id){
         name = cn.GetValue(name);
         longname = cn.GetValue(longname);
     
-    }
+        }
         cn.getSubject(int id){
-    }
+        }
         cn.getDepartment(int id){
-    }
+        }
         cn.getHoliday(int id){
-    }
+        }
         cn.getSchoolyear(int id){
-    }
+        }
         cn.getTimeTableElement(int id){
-    }
-}
+        }
+
 }
