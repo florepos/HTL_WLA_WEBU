@@ -25,6 +25,19 @@ namespace AppTestSolution.otherClasses
 
 
         #endregion
+        Object classname = testclass;
+       
+        //Teacher
+        String firstname;
+        String lastname;
+        String shortname;
+
+        //Klasse
+        String name;
+        String longname;
+        int did;
+
+        classname cn = new classname();
 
         #region Methods
        
@@ -35,5 +48,25 @@ namespace AppTestSolution.otherClasses
         }
 
         #endregion
+        cn.getTeacher(int id){
+        firstname = cn.GetValue(firstname);
+        lastname = cn.GetValue(lastname);
+        shortname = cn.GetValue(shortname);
     }
+        cn.getKlasse(int id){
+        name = cn.GetValue(name);
+        longname = cn.GetValue(longname);
+    
+    }
+        cn.getSubject(int id){
+    }
+        cn.getDepartment(int id){
+    }
+        cn.getHoliday(int id){
+    }
+        cn.getSchoolyear(int id){
+    }
+        cn.getTimeTableElement(int id){
+    }
+}
 }
