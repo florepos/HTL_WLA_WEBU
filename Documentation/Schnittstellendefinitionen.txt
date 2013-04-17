@@ -1,0 +1,83 @@
+SCHNITTSTELLEN
+GRAFIK SCHNITTSTELLEN
+* Klasse[] 5 pro String
+* Stundenname[] -||-
+* Stundenkürzel[] -||-
+* Raum String
+* Lehrername[]
+* Lehrerkürzel[]
+* Test?
+* Supplierung? -> ohne alte Daten! bool
+* Ausfall -> ohne alte Daten! bool
+1 Objekt Fach:
+* Fachname
+* Fachkürzel
+* Raum
+* Lehrername[]
+* Lehrerkürzel[]
+* Klasse[]
+* Test?
+* Supplierung?
+* Ausfall?
+
+Andere Punkte
+* Klassenliste
+* Lehrerliste
+* Raumliste
+
+
+API SCHNITTSTELLEN
+STRUCT TEACHER 
+Type: Teacher
+Public Attributes
+* int id
+* String firstname
+* String lastname
+* String shortname
+STRUCT KLASSE
+Type: Klasse
+Public Attributes
+* int id
+* String name
+* String longname
+* int did
+
+STRUCT SUBJECT
+Types: Subject
+Public Attributes
+* int id
+* String name
+* String longname
+DEPARTMENT
+Webuntis API: Types: Department
+Public Attributes
+* int id
+* String name
+* String longname
+
+
+STRUCT HOLIDAY
+WebuntisAPI: Types: Holiday
+Public Attributes
+* int id
+* String name
+* String longname
+* DateTime startTime
+* Date Time endTime
+STRUCT SCHOOLYEAR
+WebuntisAPI: Types: Schoolyear
+Public Attributes
+* int id
+* String name
+* DateTime startTime
+* DateTime endTime
+STRUCT: TIMETABLEELEMENT
+WebuntisAPI: Types: TimeTableElement
+Public Attributes
+* int id
+* DateTime date_lesson
+* DateTime startTime
+* DateTime endTime
+* int[] classids
+* int[] subjectids
+* int[] roomids
