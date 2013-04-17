@@ -315,6 +315,7 @@ namespace WebuntisAPI
         public const int KEY_TIMETABLE_Room = 4;
         public const int KEY_TIMETABLE_Student = 5;
         private List<Types.Teacher> teachers;
+        private List<Types.Subject> subjects;
         WebUntisConnector connection;
         public WebUntisAPI(Uri URL, String Schule, String Benutzer, String Passwort)
         {
@@ -352,6 +353,35 @@ namespace WebuntisAPI
                 teachers.Add(newteacher);
             }
         }
+        private void loadSubjects(String data = "[]")
+        {
+            data = "[{\"id\":1,\"name\":\"RK\",\"longName\":\"Kath.Religion\",\"foreColor\":\"000000\",\"backColor\":\"000000\"},{\"id\":2,\"name\":\"RE\",\"longName\":\"Evang.Religion\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
+            data = data.Substring(2, data.Length - 2);
+            String[] subjectsjsonobjects = Regex.Split(data,"\\},\\{");
+            subjects = new List<Types.Subject>();
+            foreach (String subjectobject in subjectsjsonobjects)
+            {
+                String[] namevalues = subjectobject.Split(',');
+                Types.Subject newsubject = new Types.Subject();
+                foreach (String namevalue in namevalues)
+                {
+                    String[] set = namevalue.Split(':');
+                    if (set[0] == "\"id\"")
+                    {
+                        newsubject.id = Convert.ToInt32(set[1]);
+                    }
+                    else if (set[0] == "\"name\"")
+                    {
+                        newsubject.name = set[1].Substring(1, set[1].Length - 2);
+                    }
+                    else if (set[0] == "\"longName\"")
+                    {
+                        newsubject.longname = set[1].Substring(1, set[1].Length - 2);
+                    }
+                }
+                subjects.Add(newsubject);
+            }
+        }
         public Types.Teacher getTeacher(int id)
         {
             loadTeacherList("");
@@ -367,6 +397,10 @@ namespace WebuntisAPI
         List<Types.Teacher> getTeachers()
         {
             return teachers;
+        }
+        public Types.Subject getSubject(int id)
+        {
+
         }
     }
 }
