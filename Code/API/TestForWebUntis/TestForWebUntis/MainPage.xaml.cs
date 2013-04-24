@@ -26,7 +26,7 @@ namespace TestForWebUntis
         public MainPage()
         {
             InitializeComponent();
-            WebuntisAPI.WebUntisAPI API = new WebuntisAPI.WebUntisAPI(new Uri("http://www.htldornbirn.at/"), "HTL Dornbirn", "phoneapp", "4aWI_WU-P!");
+            WebuntisAPI.WebUntisAPI API = new WebuntisAPI.WebUntisAPI(new Uri("http://www.htldornbirn.at/"), "HTL Dornbirn", "user", "password");
             WebuntisAPI.Types.TimeTableElement a = API.getTimeTableElement(125043);
             Debug.WriteLine(a);
         }
