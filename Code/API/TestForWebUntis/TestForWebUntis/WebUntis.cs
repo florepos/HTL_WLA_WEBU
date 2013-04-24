@@ -21,6 +21,7 @@ using System.Net;
 using System.IO;
 using System.Threading;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
 
 
 namespace DoDownload
@@ -329,6 +330,7 @@ namespace WebuntisAPI
         }
         private void loadTeacherList(String data)
         {
+            //data = "[{\"id\":1,\"name\":\"Bach\",\"foreName\":\"Ingeborg\",\"longName\":\"Bachmann\",\"foreColor\":\"000000\",\"backColor\":\"000000\"},{\"id\":2,\"name\":\"Foss\",\"foreName\":\"Dian\",\"longName\":\"Fossey\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
             teachers = new List<Types.Teacher>();
             data = data.Substring(2, data.Length - 4);
             String[] teacherobjects = Regex.Split(data, "\\},\\{");
@@ -359,35 +361,7 @@ namespace WebuntisAPI
                 teachers.Add(newteacher);
             }
         }
-       /* private void loadSubjects(String data = "[]")
-        {
-            data = "[{\"id\":1,\"name\":\"RK\",\"longName\":\"Kath.Religion\",\"foreColor\":\"000000\",\"backColor\":\"000000\"},{\"id\":2,\"name\":\"RE\",\"longName\":\"Evang.Religion\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
-            data = data.Substring(2, data.Length - 2);
-            String[] subjectsjsonobjects = Regex.Split(data,"\\},\\{");
-            subjects = new List<Types.Subject>();
-            foreach (String subjectobject in subjectsjsonobjects)
-            {
-                String[] namevalues = subjectobject.Split(',');
-                Types.Subject newsubject = new Types.Subject();
-                foreach (String namevalue in namevalues)
-                {
-                    String[] set = namevalue.Split(':');
-                    if (set[0] == "\"id\"")
-                    {
-                        newsubject.id = Convert.ToInt32(set[1]);
-                    }
-                    else if (set[0] == "\"name\"")
-                    {
-                        newsubject.name = set[1].Substring(1, set[1].Length - 2);
-                    }
-                    else if (set[0] == "\"longName\"")
-                    {
-                        newsubject.longname = set[1].Substring(1, set[1].Length - 2);
-                    }
-                }
-                subjects.Add(newsubject);
-            }
-        }
+
         public Types.Teacher getTeacher(int id)
         {
             loadTeacherList("");
@@ -404,13 +378,10 @@ namespace WebuntisAPI
         {
             return teachers;
         }
-        public Types.Subject getSubject(int id)
-        {
-
-        }*/
 		
 		private void loadSubjectList(String data)
         {
+            //data = "[{\"id\":1,\"name\":\"RK\",\"longName\":\"Kath.Religion\",\"foreColor\":\"000000\",\"backColor\":\"000000\"},{\"id\":2,\"name\":\"RE\",\"longName\":\"Evang.Religion\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
             subjects = new List<Types.Subject>();
             data = data.Substring(2, data.Length - 4);
             String[] subjectObject = Regex.Split(data, "\\},\\{");
@@ -431,7 +402,7 @@ namespace WebuntisAPI
                     {
                         newsubject.name = set[1].Substring( 1, set[1].Length-2);
                     }
-                    else if( set[0] == "\"longNname\"")
+                    else if( set[0] == "\"longName\"")
                     {
                         newsubject.longname = set[1].Substring( 1, set[1].Length-2);
                     }
@@ -458,6 +429,7 @@ namespace WebuntisAPI
 
         private void loadDepartmentList(String data)
         {
+            //data = "[{\"id\":1,\"name\":\"A1\",\"longName\":\"AAA1\"},{\"id\":2,\"name\":\"A2\",\"longName\":\"AAA2\"}]";
             departments = new List<Types.Department>();
             data = data.Substring(2, data.Length - 4);
             String[] departmentObject = Regex.Split(data, "\\},\\{");
@@ -506,6 +478,7 @@ namespace WebuntisAPI
 
         private void loadHolidayList(String data)
         {
+            //data = "[{\"id\":1,\"name\":\"Natio\",\"longName\":\"Nationalfeiertag\",\"startDate\":20101026,\"endDate\":20101026},{\"id\":2,\"name\":\"Allerheiligen\",\"longName\":\"Allerheiligen\",\"startDate\":20101101,\"endDate\":20101101}]";
             holidays = new List<Types.Holiday>();
             data = data.Substring(2, data.Length - 4);
             String[] holidayObject = Regex.Split(data, "\\},\\{");
@@ -561,6 +534,7 @@ namespace WebuntisAPI
 
         private void loadSchoolyearList(String data)
         {
+            //data = "[{\"id\":10,\"name\":\"2010/2011\",\"startDate\":20100830,\"endDate\":20110731},{\"id\":11,\"name\":\"2011/2012\",\"startDate\":20110905,\"endDate\":20120729}]";
             schoolyears = new List<Types.Schoolyear>();
             data = data.Substring(2, data.Length - 4);
             String[] schoolyearObject = Regex.Split(data, "\\},\\{");
@@ -595,7 +569,7 @@ namespace WebuntisAPI
         }
         public Types.Schoolyear getSchoolyear(int id)
         {
-            loadHolidayList("");
+            loadSchoolyearList("");
             foreach (Types.Schoolyear schoolyear in schoolyears)
             {
                 if (schoolyear.id == id)
@@ -612,27 +586,28 @@ namespace WebuntisAPI
 
         private void loadTimeTableElementList(String data)
         {
+            //data = "[{\"id\":125043,\"date\":20110117,\"startTime\":800,\"endTime\":850,\"kl\":[{\"id\":71,\"id\":5}],\"te\":[{\"id\":23}],\"su\":[{\"id\":13}],\"ro\":[{\"id\":1}]},{\"id\":125127,\"date\":20120117,\"startTime\":1055,\"endTime\":1145,\"kl\":[{\"id\":22}],\"te\":[{\"id\":41}],\"su\":[{\"id\":19}],\"ro\":[{\"id\":31}]}]";
+            //data = "[{\"id\":125043,\"date\":20110117,\"startTime\":800,\"endTime\":850,\"kl\":[{\"id\":71}],\"te\":[{\"id\":23}],\"su\":[{\"id\":13}],\"ro\":[{\"id\":1}]}]";
+
             timeTableElements = new List<Types.TimeTableElement>();
             data = data.Substring(2, data.Length - 4);
             String[] timeTableElementObject = Regex.Split(data, "\\},\\{");
-            char[] dataCharArr = data.ToCharArray();
-            int start = 0;
-            int i = 0;
-            int countOpen = 1;
-            int countObjects = 1;
-            int n = 0;
-
+            char[] dataCharArr;
+            TimeTableId timeTableInfo;
+            
             foreach (String timeTableElementString in timeTableElementObject)
             {
                 String[] namevalues = timeTableElementString.Split(',');
                 Types.TimeTableElement newTimeTableElement = new Types.TimeTableElement();
+                dataCharArr = data.ToCharArray();
 
-                foreach (String namevalue in namevalues)
+                for( int s = 0; s < namevalues.Length; s++)
                 {
-                    String[] set = namevalue.Split(':');
+                    String[] set = namevalues[s].Split(':');
+
                     if (set[0] == "\"id\"")
                     {
-                        newTimeTableElement.id = Convert.ToInt32(set[1]);
+                        newTimeTableElement.id = Convert.ToInt32( Regex.Replace( set[1], "}]", ""));
                     }
                     else if (set[0] == "\"date\"")
                     {
@@ -672,193 +647,129 @@ namespace WebuntisAPI
                         }
                         newTimeTableElement.endTime = new DateTime( newTimeTableElement.date_lesson.Year, newTimeTableElement.date_lesson.Month, newTimeTableElement.date_lesson.Day, endHour, endMinute, 0);
                     }
-                    else if (set[0] == "kl")
+                    else if (set[0] == "\"kl\"")
                     {
                         // set klassen ids
-
-                        start = data.IndexOf("kl{[");
-                        countObjects = 0;
-
-                        if (start != -1)
-                        {
-                            countOpen = 1;
-
-                            start +=  4;
-
-                            for (i = start++; dataCharArr[i] != '\0'; i++)
-                            {
-                                if (dataCharArr[i] == ',')
-                                    countObjects++;
-                                else if (dataCharArr[i] == '{')
-                                    countOpen++;
-                                else if (dataCharArr[i] == '}')
-                                {
-                                    countOpen--;
-                                    if (countOpen == 0)
-                                        break;
-                                }
-                            }
-                        }
-                        if (countObjects == 0)
-                        {
-                            newTimeTableElement.classids = new int[1];
-                        }
-                        else
-                        {
-                            data = data.Substring( start, i-1);
-                            String[] klasseIdObject = Regex.Split( data, "\\}\\,\\{");
-                            newTimeTableElement.classids = new int[countObjects];
-
-                            foreach (String klasseIdString in klasseIdObject)
-                            {
-                                String[] klasseIdNameValues = klasseIdString.Split(',');
-
-                                foreach (String klasseIdNameValue in klasseIdNameValues)
-                                {
-                                    String[] setKlassenId = klasseIdNameValue.Split(':');
-                                    n = 0;
-
-                                    foreach (String setKlasseId in setKlassenId)
-                                    {
-                                        if (setKlasseId == "\"id\"")
-                                            continue;
-                                        else
-                                        {
-                                            newTimeTableElement.classids[n] = Convert.ToInt32( setKlasseId);
-                                            n++;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                        timeTableInfo = getTimeTableId("\"kl\"", s, data, dataCharArr);
+                        newTimeTableElement.classids = timeTableInfo.id;
+                        s = timeTableInfo.s;
                     }
-                    else if (set[0] == "su")
+                    else if (set[0] == "\"su\"")
                     {
                         // set subject ids
-
-                        start = data.IndexOf("su{[");
-                        countObjects = 0;
-
-                        if (start != -1)
-                        {
-                            countOpen = 1;
-
-                            start += 4;
-
-                            for (i = start++; dataCharArr[i] != '\0'; i++)
-                            {
-                                if (dataCharArr[i] == ',')
-                                    countObjects++;
-                                else if (dataCharArr[i] == '{')
-                                    countOpen++;
-                                else if (dataCharArr[i] == '}')
-                                {
-                                    countOpen--;
-                                    if (countOpen == 0)
-                                        break;
-                                }
-                            }
-                        }
-                        if (countObjects == 0)
-                        {
-                            newTimeTableElement.subjectids = new int[1];
-                        }
-                        else
-                        {
-                            data = data.Substring(start, i - 1);
-                            String[] subjectIdObject = Regex.Split(data, "\\}\\,\\{");
-                            newTimeTableElement.subjectids = new int[countObjects];
-
-                            foreach (String subjectIdString in subjectIdObject)
-                            {
-                                String[] subjectIdNameValues = subjectIdString.Split(',');
-
-                                foreach (String subjectIdNameValue in subjectIdNameValues)
-                                {
-                                    String[] setSubjectIds = subjectIdNameValue.Split(':');
-                                    n = 0;
-
-                                    foreach (String setSubjectId in setSubjectIds)
-                                    {
-                                        if (setSubjectId == "\"id\"")
-                                            continue;
-                                        else
-                                        {
-                                            newTimeTableElement.subjectids[n] = Convert.ToInt32(setSubjectId);
-                                            n++;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                        timeTableInfo = getTimeTableId("\"su\"", s, data, dataCharArr);
+                        newTimeTableElement.subjectids = timeTableInfo.id;
+                        s = timeTableInfo.s;
                     }
-                    else if (set[0] == "ro")
+                    else if (set[0] == "\"ro\"")
                     {
                         // set room ids
-
-                        start = data.IndexOf("ro{[");
-                        countObjects = 0;
-
-                        if (start != -1)
-                        {
-                            countOpen = 1;
-
-                            start += 4;
-
-                            for (i = start++; dataCharArr[i] != '\0'; i++)
-                            {
-                                if (dataCharArr[i] == ',')
-                                    countObjects++;
-                                else if (dataCharArr[i] == '{')
-                                    countOpen++;
-                                else if (dataCharArr[i] == '}')
-                                {
-                                    countOpen--;
-                                    if (countOpen == 0)
-                                        break;
-                                }
-                            }
-                        }
-                        if (countObjects == 0)
-                        {
-                            newTimeTableElement.roomids = new int[1];
-                        }
-                        else
-                        {
-                            data = data.Substring(start, i - 1);
-                            String[] roomIdObject = Regex.Split(data, "\\}\\,\\{");
-                            newTimeTableElement.roomids = new int[countObjects];
-
-                            foreach (String roomIdString in roomIdObject)
-                            {
-                                String[] roomIdNameValues = roomIdString.Split(',');
-
-                                foreach (String roomIdNameValue in roomIdNameValues)
-                                {
-                                    String[] setRoomIds = roomIdNameValue.Split(':');
-                                    n = 0;
-
-                                    foreach (String setRoomId in setRoomIds)
-                                    {
-                                        if (setRoomId == "\"id\"")
-                                            continue;
-                                        else
-                                        {
-                                            newTimeTableElement.roomids[n] = Convert.ToInt32(setRoomId);
-                                            n++;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                        timeTableInfo = getTimeTableId("\"ro\"", s, data, dataCharArr);
+                        newTimeTableElement.roomids = timeTableInfo.id;
+                        s = timeTableInfo.s;
                     }
                 }
+
+                try
+                {
+                    data = data.Remove(0, timeTableElementString.Length + 4);
+                }
+                catch (ArgumentOutOfRangeException)
+                {
+                }
+
                 timeTableElements.Add( newTimeTableElement);
             }
         }
+
+        private struct TimeTableId
+        {
+            public int[] id;
+            public int s;
+        }
+
+        private TimeTableId getTimeTableId(String idString, int s, String data, char[] dataCharArr)
+        {
+            int start = 0;
+            int i = 0;
+            int countOpen = 1;
+            int countObjects = 1;
+            int countQuote = 0;
+            int n = 0;
+            String data1;
+            String[] klasseIdObject;
+
+            TimeTableId timeTableId = new TimeTableId();
+
+            start = data.IndexOf( idString + ":[{");//"\"kl\":[{"
+            countObjects = 0;
+
+            if (start != -1)
+            {
+                countOpen = 0;
+                            
+                for (i = start++; i < dataCharArr.Length; i++)
+                {
+                    if ((dataCharArr[i] == '\"') && (countQuote == 0))
+                    {
+                        countObjects++;
+                        countQuote++;
+                    }
+                    else if ((dataCharArr[i] == '\"') && (countQuote > 0))
+                    {
+                        countQuote--;
+                    }
+                    else if (dataCharArr[i] == '{')
+                    {
+                        countOpen++;
+                    }
+                    else if (dataCharArr[i] == '}')
+                    {
+                        countOpen--;
+                        if (countOpen == 0)
+                            break;
+                    }
+                }
+            }
+            if ( start == -1)
+            {
+                timeTableId.id = new int[1];
+            }
+            else
+            {
+                data1 = data.Substring(start + 2, i - start);
+
+                data1 = data1.Remove(data1.IndexOf(']')-1);//+1
+                klasseIdObject = Regex.Split(data1, "\\}\\,\\{");
+                timeTableId.id = new int[countObjects-1];
+
+                String[] klasseIdNameValues = klasseIdObject[0].Split(',');
+                n = 0;
+
+                foreach (String klasseIdString in klasseIdNameValues)
+                {
+                    if (n > 0)
+                        s++;
+
+                    String[] setKlassenId = klasseIdString.Split(':');
+                    try
+                    {
+                        timeTableId.id[n] = Convert.ToInt32(setKlassenId[1]);
+                    }
+                    catch( Exception)
+                    {
+                        timeTableId.id[n] = Convert.ToInt32(setKlassenId[2]);
+                    }
+                    n++;
+                }
+            }
+            timeTableId.s = s;
+            return timeTableId;
+        }
+
         public Types.TimeTableElement getTimeTableElement(int id)
         {
-            loadHolidayList("");
+            loadTimeTableElementList("");
             foreach (Types.TimeTableElement timeTableElement in timeTableElements)
             {
                 if (timeTableElement.id == id)

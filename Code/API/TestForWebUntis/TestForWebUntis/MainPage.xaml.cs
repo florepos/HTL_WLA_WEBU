@@ -26,6 +26,9 @@ namespace TestForWebUntis
         public MainPage()
         {
             InitializeComponent();
+            WebuntisAPI.WebUntisAPI API = new WebuntisAPI.WebUntisAPI(new Uri("http://www.htldornbirn.at/"), "HTL Dornbirn", "phoneapp", "4aWI_WU-P!");
+            WebuntisAPI.Types.TimeTableElement a = API.getTimeTableElement(125043);
+            Debug.WriteLine(a);
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -33,8 +36,10 @@ namespace TestForWebUntis
             textBoxRequest.Text = "hello";
             //dod = new HttpWebRequest_BeginGetResponse();
             //dod.start();
-            WebuntisAPI.WebUntisAPI API = new WebuntisAPI.WebUntisAPI(new Uri("http://www.htldornbirn.at/"),"HTL Dornbirn","User","Passwort");
-                Debug.WriteLine( API.getTeacher(1).ToString());
+            //WebuntisAPI.WebUntisAPI API = new WebuntisAPI.WebUntisAPI(new Uri("http://www.htldornbirn.at/"), "HTL Dornbirn", "phoneapp", "4aWI_WU-P!");
+            //WebuntisAPI.Types.TimeTableElement a = API.getTimeTableElement(125043);
+           //Debug.WriteLine(a);
+            // Debug.WriteLine( API.getTeacher(1).ToString());
             //System.Diagnostics.Debug.WriteLine("Yay!");
         }
     }
