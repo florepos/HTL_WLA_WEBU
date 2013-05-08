@@ -79,10 +79,10 @@ namespace DoDownload
                 HttpWebRequest myHttpWebRequest = (HttpWebRequest)WebRequest.Create("http://www.contoso.com");
                 
                 /*! set the HttpWebRequest variables*/
-                //myHttpWebRequest.Method = "POST";
+              //  myHttpWebRequest.Method = "POST";
                 //myHttpWebRequest.ContentType = "application/json";
 
-                //Stream stream = myHttpWebRequest.BeginGetRequestStream();
+               // Stream stream = myHttpWebRequest.BeginGetRequestStream();
 
                 /**
                 * If you are behind a firewall and you do not have your browser proxy setup
@@ -287,6 +287,14 @@ namespace WebuntisAPI
             public int[] subjectids;/*!< Field containing array of ids of subjects */
             public int[] roomids;/*!< Field containing ids of rooms */
         }
+        //! WebuntisAPI::Types::Room
+        /* The Structure to save information about a room */
+        public struct Room
+        {
+            public int id;/*!< Field containing id */
+            public string name;/*!< Field containing the name of the room. important: the first character is 'R'*/
+            public string longname;/*!< Field containg the long name of the room. important: the first character isn't 'R'*/
+        }
     }
     public class WebUntisConnector
     {
@@ -341,6 +349,7 @@ namespace WebuntisAPI
         private List<Types.Holiday> holidays;
         private List<Types.Schoolyear> schoolyears;
         private List<Types.TimeTableElement> timeTableElements;
+        private List<Types.Room> rooms;
 
         WebUntisConnector connection;
         public WebUntisAPI(Uri URL, String Schule, String Benutzer, String Passwort)
@@ -423,6 +432,10 @@ namespace WebuntisAPI
                     else if (set[0] == "\"longName\"")
                     {
                         newklasse.longname = set[1].Substring(1, set[1].Length - 2);
+                    }
+                    else if (set[0] == "\"did\"")
+                    {
+                        newklasse.did = Convert.ToInt32( set[1].Substring(1, set[1].Length - 2));
                     }
                 }
                 klassen.Add(newklasse);
@@ -853,6 +866,53 @@ namespace WebuntisAPI
         public List<Types.TimeTableElement> getTimeTableElements()
         {
             return timeTableElements;
+        }
+        private void loadRoomList(String data)
+        {
+            data = "[{\"id\":1,\"name\":\"R1A\",\"longName\":\"1A\",\"foreColor\":\"000000\",\"backColor\":\"000000\"},{\"id\":2,\"name\":\"R1B\",\"longName\":\"1B\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]}";
+            rooms = new List<Types.Room>();
+            data = data.Substring(2, data.Length - 4);
+            String[] roomobjects = Regex.Split(data, "\\},\\{");
+            foreach (String roomstring in roomobjects)
+            {
+                String[] namevalues = roomstring.Split(',');
+                Types.Room newroom = new Types.Room();
+                foreach (String namevalue in namevalues)
+                {
+                    String[] set = namevalue.Split(':');
+                    if (set[0] == "\"id\"")
+                    {
+                        newroom.id = Convert.ToInt32(set[1]);
+                    }
+                    else if (set[0] == "\"name\"")
+                    {
+                        newroom.name = set[1].Substring(1, set[1].Length - 2);
+                    }
+                    else if (set[0] == "\"longName\"")
+                    {
+                        newroom.longname = set[1].Substring(1, set[1].Length - 2);
+                    }
+                }
+                rooms.Add(newroom);
+            }
+        }
+        //! WebuntisAPI::getRoom
+        /*! Get the Room Element from Buffer */
+        public Types.Room getRoom(int id)
+        {
+            loadRoomList("");
+            foreach (Types.Room room in rooms)
+            {
+                if (room.id == id)
+                {
+                    return room;
+                }
+            }
+            return new Types.Room();
+        }
+        public List<Types.Room> getRooms()
+        {
+            return rooms;
         }
     }
 }
