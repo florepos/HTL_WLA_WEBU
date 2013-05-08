@@ -77,7 +77,12 @@ namespace DoDownload
             {
                 // Create a HttpWebrequest object to the desired URL. 
                 HttpWebRequest myHttpWebRequest = (HttpWebRequest)WebRequest.Create("http://www.contoso.com");
+                
+                /*! set the HttpWebRequest variables*/
+                //myHttpWebRequest.Method = "POST";
+                //myHttpWebRequest.ContentType = "application/json";
 
+                //Stream stream = myHttpWebRequest.BeginGetRequestStream();
 
                 /**
                 * If you are behind a firewall and you do not have your browser proxy setup
@@ -388,9 +393,58 @@ namespace WebuntisAPI
             }
             return new Types.Teacher();
         }
-        List<Types.Teacher> getTeachers()
+        public List<Types.Teacher> getTeachers()
         {
             return teachers;
+        }
+
+        /*! loadKlassenList*/
+        private void loadKlassenList(String data)
+        {
+            //data = "[{\"id\":71,\"name\":\"1A\",\"longName\":\"Klasse1A\",\"foreColor\":\"000000\",\"backColor\":\"000000\",did:2},{\"id\":72,\"name\":\"1B\",\"longName\":\"Klasse1B\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
+            klassen = new List<Types.Klasse>();
+            data = data.Substring(2, data.Length - 4);
+            String[] klasseobjects = Regex.Split(data, "\\},\\{");
+            foreach (String klassestring in klasseobjects)
+            {
+                String[] namevalues = klassestring.Split(',');
+                Types.Klasse newklasse = new Types.Klasse();
+                foreach (String namevalue in namevalues)
+                {
+                    String[] set = namevalue.Split(':');
+                    if (set[0] == "\"id\"")
+                    {
+                        newklasse.id = Convert.ToInt32(set[1]);
+                    }
+                    else if (set[0] == "\"name\"")
+                    {
+                        newklasse.name = set[1].Substring(1, set[1].Length - 2);
+                    }
+                    else if (set[0] == "\"longName\"")
+                    {
+                        newklasse.longname = set[1].Substring(1, set[1].Length - 2);
+                    }
+                }
+                klassen.Add(newklasse);
+            }
+        }
+        /*! getKlasse*/
+        public Types.Klasse getKlasse(int id)
+        {
+            loadKlassenList("");
+            foreach (Types.Klasse klasse in klassen)
+            {
+                if (klasse.id == id)
+                {
+                    return klasse;
+                }
+            }
+            return new Types.Klasse();
+        }
+        /*! getKlassen*/
+        public List<Types.Klasse> getKlassen()
+        {
+            return klassen;
         }
 		
 		private void loadSubjectList(String data)
@@ -438,7 +492,7 @@ namespace WebuntisAPI
             }
             return new Types.Subject();
         }
-        List<Types.Subject> getSubjects()
+        public List<Types.Subject> getSubjects()
         {
             return subjects;
         }
@@ -487,7 +541,7 @@ namespace WebuntisAPI
             }
             return new Types.Department();
         }
-        List<Types.Department> getDepartments()
+        public List<Types.Department> getDepartments()
         {
             return departments;
         }
@@ -543,7 +597,7 @@ namespace WebuntisAPI
             }
             return new Types.Holiday();
         }
-        List<Types.Holiday> getHolidays()
+        public List<Types.Holiday> getHolidays()
         {
             return holidays;
         }
@@ -595,7 +649,7 @@ namespace WebuntisAPI
             }
             return new Types.Schoolyear();
         }
-        List<Types.Schoolyear> getSchoolyears()
+        public List<Types.Schoolyear> getSchoolyears()
         {
             return schoolyears;
         }
@@ -796,7 +850,7 @@ namespace WebuntisAPI
             }
             return new Types.TimeTableElement();
         }
-        List<Types.TimeTableElement> getTimeTableElements()
+        public List<Types.TimeTableElement> getTimeTableElements()
         {
             return timeTableElements;
         }
