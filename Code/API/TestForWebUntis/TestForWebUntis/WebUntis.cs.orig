@@ -410,10 +410,16 @@ namespace WebuntisAPI
         {
             return teachers;
         }
-
+<<<<<<< HEAD
+        //! loadSubjectList
         /*!
          * \param data Containing JSON String
          */
+=======
+
+        /*! loadKlassenList*/
+        private void loadKlassenList(String data)
+        {
             //data = "[{\"id\":71,\"name\":\"1A\",\"longName\":\"Klasse1A\",\"foreColor\":\"000000\",\"backColor\":\"000000\",did:2},{\"id\":72,\"name\":\"1B\",\"longName\":\"Klasse1B\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
             klassen = new List<Types.Klasse>();
             data = data.Substring(2, data.Length - 4);
@@ -460,6 +466,7 @@ namespace WebuntisAPI
             return klassen;
         }
 		
+>>>>>>> 2d66082d887021bbfbb302cf2220d491b53094b7
 		private void loadSubjectList(String data)
         {
             //data = "[{\"id\":1,\"name\":\"RK\",\"longName\":\"Kath.Religion\",\"foreColor\":\"000000\",\"backColor\":\"000000\"},{\"id\":2,\"name\":\"RE\",\"longName\":\"Evang.Religion\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
@@ -506,10 +513,15 @@ namespace WebuntisAPI
             }
             return new Types.Subject();
         }
+<<<<<<< HEAD
         //! getSubjects()
         /*!
          * Get the Complete Buffer of subjects
          */
+        List<Types.Subject> getSubjects()
+=======
+        public List<Types.Subject> getSubjects()
+>>>>>>> 2d66082d887021bbfbb302cf2220d491b53094b7
         {
             return subjects;
         }
@@ -690,8 +702,13 @@ namespace WebuntisAPI
             }
             return new Types.Schoolyear();
         }
+<<<<<<< HEAD
         //! getSchoolyears
         /*! get all Schoolyears */
+        List<Types.Schoolyear> getSchoolyears()
+=======
+        public List<Types.Schoolyear> getSchoolyears()
+>>>>>>> 2d66082d887021bbfbb302cf2220d491b53094b7
         {
             return schoolyears;
         }
@@ -897,8 +914,11 @@ namespace WebuntisAPI
             }
             return new Types.TimeTableElement();
         }
+<<<<<<< HEAD
         //! getTimeTableElements
         /*! get all Timetable Elements */
+=======
+>>>>>>> 2d66082d887021bbfbb302cf2220d491b53094b7
         public List<Types.TimeTableElement> getTimeTableElements()
         {
             return timeTableElements;
