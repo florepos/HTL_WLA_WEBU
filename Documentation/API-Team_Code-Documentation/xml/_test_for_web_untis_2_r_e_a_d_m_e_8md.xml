@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_test_for_web_untis_2_r_e_a_d_m_e_8md" kind="file">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">TestForWebUntis</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">===============</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">Code<sp/>directory<sp/>of<sp/>the<sp/>API<sp/>Team</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">Open<sp/>the<sp/>sln<sp/>file<sp/>in<sp/>the<sp/>directory<sp/>above<sp/>to<sp/>use<sp/>the<sp/>project.</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">#<sp/>MainPage.xaml</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">This<sp/>file<sp/>contains<sp/>an<sp/>UI<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>testing<sp/>purposes<sp/>only</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>MainPage.xaml.cs</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal">Code<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>the<sp/>Testing<sp/>UI</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>App.xaml.cs</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal">App<sp/>Initalisation</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>WebUntis.cs</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="normal">Contains<sp/>the<sp/>Code<sp/>from<sp/>the<sp/>API<sp/>Team.<sp/>For<sp/>Documentation<sp/>please<sp/>see<sp/>[Documentation<sp/>Directory](https:</highlight><highlight class="comment">//github.com/florepos/HTL_WLA_WEBU/tree/master/Documentation/API-Team_Code-Documentation)</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/README.md"/>
+  </compounddef>
+</doxygen>

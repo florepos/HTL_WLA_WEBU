@@ -1,0 +1,58 @@
+.TH "DoDownload.HttpWebRequest_BeginGetResponse" 3 "Mit Mai 8 2013" "WU-APP_API" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DoDownload.HttpWebRequest_BeginGetResponse \- 
+.PP
+\fBDoDownload::HttpWebRequest_BeginGetResponse\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Öffentliche Methoden"
+
+.in +1c
+.ti -1c
+.RI "void \fBstart\fP ()"
+.br
+.RI "\fI\fBstart()\fP \fP"
+.in -1c
+.SS "Statische öffentliche Attribute"
+
+.in +1c
+.ti -1c
+.RI "static ManualResetEvent \fBallDone\fP = new ManualResetEvent(false)"
+.br
+.in -1c
+.SH "Ausführliche Beschreibung"
+.PP 
+\fBDoDownload::HttpWebRequest_BeginGetResponse\fP\&. 
+
+Class to load 
+.SH "Dokumentation der Elementfunktionen"
+.PP 
+.SS "void DoDownload\&.HttpWebRequest_BeginGetResponse\&.start ()\fC [inline]\fP"
+
+.PP
+\fBstart()\fP Starts a Webrequest set the HttpWebRequest variables
+.PP
+.PP
+.nf
+              If you are behind a firewall and you do not have your browser proxy setup
+              you need to use the following proxy creation code.
+.fi
+.PP
+.PP
+Create a proxy object\&. WebProxy myProxy = new WebProxy();
+.PP
+Associate a new Uri object to the _wProxy object, using the proxy address selected by the user\&. myProxy\&.Address = new Uri('http://myproxy');
+.PP
+Finally, initialize the Web request object proxy property with the _wProxy object\&. myHttpWebRequest\&.Proxy=myProxy;
+.SH "Dokumentation der Datenelemente"
+.PP 
+.SS "ManualResetEvent DoDownload\&.HttpWebRequest_BeginGetResponse\&.allDone = new ManualResetEvent(false)\fC [static]\fP"
+Contains the State of the \fBDownload\fP 
+
+.SH "Autor"
+.PP 
+Automatisch erzeugt von Doxygen für WU-APP_API aus dem Quellcode\&.

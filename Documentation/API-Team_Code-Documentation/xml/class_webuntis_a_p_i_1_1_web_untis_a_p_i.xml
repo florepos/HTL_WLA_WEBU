@@ -2,7 +2,171 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
   <compounddef id="class_webuntis_a_p_i_1_1_web_untis_a_p_i" kind="class" prot="public">
     <compoundname>WebuntisAPI::WebUntisAPI</compoundname>
+    <innerclass refid="struct_webuntis_a_p_i_1_1_web_untis_a_p_i_1_1_time_table_id" prot="private">WebuntisAPI::WebUntisAPI::TimeTableId</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a878b0a3caa3dd47413b6b6de7928319a" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int WebuntisAPI.WebUntisAPI.KEY_TIMETABLE_Klasse</definition>
+        <argsstring></argsstring>
+        <name>KEY_TIMETABLE_Klasse</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Consant lt. API of WU for TimeTable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="332" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1ad93ea508e78c71d5b4a97bab65322115" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int WebuntisAPI.WebUntisAPI.KEY_TIMETABLE_Teacher</definition>
+        <argsstring></argsstring>
+        <name>KEY_TIMETABLE_Teacher</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constant lt. API of WU for TimeTable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="333" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a675f0bc99b9300bfb0b582df0b1fd5a7" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int WebuntisAPI.WebUntisAPI.KEY_TIMETABLE_Subject</definition>
+        <argsstring></argsstring>
+        <name>KEY_TIMETABLE_Subject</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constant lt. API of WU for TimeTable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="334" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a71c1728202672867d91eaac73fdf8d26" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int WebuntisAPI.WebUntisAPI.KEY_TIMETABLE_Room</definition>
+        <argsstring></argsstring>
+        <name>KEY_TIMETABLE_Room</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constant lt. API of WU for TimeTable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="335" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a3e09c1c77ac67a2dd3065737213b775e" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int WebuntisAPI.WebUntisAPI.KEY_TIMETABLE_Student</definition>
+        <argsstring></argsstring>
+        <name>KEY_TIMETABLE_Student</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constant lt. API of WU for TimeTable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="336" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a48a16bd8917c9918ba2a4b057abf2a74" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_teacher" kindref="compound">Types.Teacher</ref> &gt;</type>
+        <definition>List&lt;Types.Teacher&gt; WebuntisAPI.WebUntisAPI.teachers</definition>
+        <argsstring></argsstring>
+        <name>teachers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer for Teachers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="337" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a5f878f0c206ebd909ff3f199d5f8ea41" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_klasse" kindref="compound">Types.Klasse</ref> &gt;</type>
+        <definition>List&lt;Types.Klasse&gt; WebuntisAPI.WebUntisAPI.klassen</definition>
+        <argsstring></argsstring>
+        <name>klassen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer for Classes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="338" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a5bd384eb0c970dcd5e5d39485a8f655f" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_subject" kindref="compound">Types.Subject</ref> &gt;</type>
+        <definition>List&lt;Types.Subject&gt; WebuntisAPI.WebUntisAPI.subjects</definition>
+        <argsstring></argsstring>
+        <name>subjects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer for subjects </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="339" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1af4ce66d44d74dd5c9c8dc14a4a41f75e" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_department" kindref="compound">Types.Department</ref> &gt;</type>
+        <definition>List&lt;Types.Department&gt; WebuntisAPI.WebUntisAPI.departments</definition>
+        <argsstring></argsstring>
+        <name>departments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer for departments - not really used </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="340" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a61a75362195a1e3b03eaeaafcf577577" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_holiday" kindref="compound">Types.Holiday</ref> &gt;</type>
+        <definition>List&lt;Types.Holiday&gt; WebuntisAPI.WebUntisAPI.holidays</definition>
+        <argsstring></argsstring>
+        <name>holidays</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer for Holidays </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="341" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a305b1dddc844c15623846f139fbcd257" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_schoolyear" kindref="compound">Types.Schoolyear</ref> &gt;</type>
+        <definition>List&lt;Types.Schoolyear&gt; WebuntisAPI.WebUntisAPI.schoolyears</definition>
+        <argsstring></argsstring>
+        <name>schoolyears</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer for schoolyears </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="342" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1accbe8890d7be58e149c3856f92e0a159" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_time_table_element" kindref="compound">Types.TimeTableElement</ref> &gt;</type>
+        <definition>List&lt;Types.TimeTableElement&gt; WebuntisAPI.WebUntisAPI.timeTableElements</definition>
+        <argsstring></argsstring>
+        <name>timeTableElements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer for TimeTable Elements </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="343" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="343" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1aaf1ebc41017119125b684cbd1dd2c52b" prot="private" static="no" mutable="no">
         <type><ref refid="class_webuntis_a_p_i_1_1_web_untis_connector" kindref="compound">WebUntisConnector</ref></type>
         <definition>WebUntisConnector WebuntisAPI.WebUntisAPI.connection</definition>
@@ -11,19 +175,554 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Connection to Server </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="345" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1ab63b122fb71102686f96b2a79fafb8b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WebuntisAPI.WebUntisAPI.WebUntisAPI</definition>
+        <argsstring>(Uri URL, String Schule, String Benutzer, String Passwort)</argsstring>
+        <name>WebUntisAPI</name>
+        <param>
+          <type>Uri</type>
+          <declname>URL</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>Schule</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>Benutzer</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>Passwort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>API to APP-Team <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>URL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The URL of the WU Server </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Schule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Name of the School </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Benutzer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Username of the User </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Passwort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Password of the User </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="354" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="353" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1ae0ff36ba0b419981afa923a3d39a39da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_webuntis_a_p_i_1_1_types_1_1_teacher" kindref="compound">Types.Teacher</ref></type>
+        <definition>Types.Teacher WebuntisAPI.WebUntisAPI.getTeacher</definition>
+        <argsstring>(int id)</argsstring>
+        <name>getTeacher</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Get Teachers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the Teacher </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="398" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="397" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a6224a42969b28de78a9370745fb44efb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_teacher" kindref="compound">Types.Teacher</ref> &gt;</type>
+        <definition>List&lt;Types.Teacher&gt; WebuntisAPI.WebUntisAPI.getTeachers</definition>
+        <argsstring>()</argsstring>
+        <name>getTeachers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="141" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="141" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="410" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="409" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1ad9f81e68ec2e53ddb3538a1386f1e285" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_webuntis_a_p_i_1_1_types_1_1_klasse" kindref="compound">Types.Klasse</ref></type>
+        <definition>Types.Klasse WebuntisAPI.WebUntisAPI.getKlasse</definition>
+        <argsstring>(int id)</argsstring>
+        <name>getKlasse</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>getKlasse </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="448" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="447" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1af4d855ceab062d121b86c73ec6d963af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_klasse" kindref="compound">Types.Klasse</ref> &gt;</type>
+        <definition>List&lt;Types.Klasse&gt; WebuntisAPI.WebUntisAPI.getKlassen</definition>
+        <argsstring>()</argsstring>
+        <name>getKlassen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>getKlassen </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="461" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="460" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a4ba48e849228d5b2403dc06f1430f41a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_webuntis_a_p_i_1_1_types_1_1_subject" kindref="compound">Types.Subject</ref></type>
+        <definition>Types.Subject WebuntisAPI.WebUntisAPI.getSubject</definition>
+        <argsstring>(int id)</argsstring>
+        <name>getSubject</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>getSubject </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of the Subject element </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="500" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="499" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a6e81b3b45aede6785f256bf4804a0e16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_subject" kindref="compound">Types.Subject</ref> &gt;</type>
+        <definition>List&lt;Types.Subject&gt; WebuntisAPI.WebUntisAPI.getSubjects</definition>
+        <argsstring>()</argsstring>
+        <name>getSubjects</name>
+        <briefdescription>
+<para><ref refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a6e81b3b45aede6785f256bf4804a0e16" kindref="member">getSubjects()</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para>Get the Complete Buffer of subjects </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="516" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="515" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a779a92b63fa946f6f78443c73288a47d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_webuntis_a_p_i_1_1_types_1_1_department" kindref="compound">Types.Department</ref></type>
+        <definition>Types.Department WebuntisAPI.WebUntisAPI.getDepartment</definition>
+        <argsstring>(int id)</argsstring>
+        <name>getDepartment</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>getDepartment </para>        </briefdescription>
+        <detaileddescription>
+<para>Get the department by id <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Id of department to search </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="562" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="561" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a6283a2b844c88aba6121312691b561c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_department" kindref="compound">Types.Department</ref> &gt;</type>
+        <definition>List&lt;Types.Department&gt; WebuntisAPI.WebUntisAPI.getDepartments</definition>
+        <argsstring>()</argsstring>
+        <name>getDepartments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="574" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="573" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a345622fe756645e9922802172386650b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_webuntis_a_p_i_1_1_types_1_1_holiday" kindref="compound">Types.Holiday</ref></type>
+        <definition>Types.Holiday WebuntisAPI.WebUntisAPI.getHoliday</definition>
+        <argsstring>(int id)</argsstring>
+        <name>getHoliday</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>getHoliday </para>        </briefdescription>
+        <detaileddescription>
+<para>Search for Holyday <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>id of holiday </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="626" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="625" bodyend="636"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1adcadbeb03e548258501c3f095375375a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_holiday" kindref="compound">Types.Holiday</ref> &gt;</type>
+        <definition>List&lt;Types.Holiday&gt; WebuntisAPI.WebUntisAPI.getHolidays</definition>
+        <argsstring>()</argsstring>
+        <name>getHolidays</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="638" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="637" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a098a31245679e053a3ea4ed24a682917" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_webuntis_a_p_i_1_1_types_1_1_schoolyear" kindref="compound">Types.Schoolyear</ref></type>
+        <definition>Types.Schoolyear WebuntisAPI.WebUntisAPI.getSchoolyear</definition>
+        <argsstring>(int id)</argsstring>
+        <name>getSchoolyear</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>getSchoolyear </para>        </briefdescription>
+        <detaileddescription>
+<para>getSchoolyear gets the schoolyear <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the id of the schoolyear </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="685" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="684" bodyend="695"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a2d8d22c88e987371e5215d0e191e6fd1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_schoolyear" kindref="compound">Types.Schoolyear</ref> &gt;</type>
+        <definition>List&lt;Types.Schoolyear&gt; WebuntisAPI.WebUntisAPI.getSchoolyears</definition>
+        <argsstring>()</argsstring>
+        <name>getSchoolyears</name>
+        <briefdescription>
+<para>getSchoolyears </para>        </briefdescription>
+        <detaileddescription>
+<para>get all Schoolyears </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="699" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="698" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1ab65edf15b17f3d493d1145f746939db5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_webuntis_a_p_i_1_1_types_1_1_time_table_element" kindref="compound">Types.TimeTableElement</ref></type>
+        <definition>Types.TimeTableElement WebuntisAPI.WebUntisAPI.getTimeTableElement</definition>
+        <argsstring>(int id)</argsstring>
+        <name>getTimeTableElement</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>WebuntisAPI::getTimeTableElement. </para>        </briefdescription>
+        <detaileddescription>
+<para>Get The Timetable Element from Buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="893" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="892" bodyend="903"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a3c70ef5f1c3785c9ce61724b8456922b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="struct_webuntis_a_p_i_1_1_types_1_1_time_table_element" kindref="compound">Types.TimeTableElement</ref> &gt;</type>
+        <definition>List&lt;Types.TimeTableElement&gt; WebuntisAPI.WebUntisAPI.getTimeTableElements</definition>
+        <argsstring>()</argsstring>
+        <name>getTimeTableElements</name>
+        <briefdescription>
+<para>getTimeTableElements </para>        </briefdescription>
+        <detaileddescription>
+<para>get all Timetable Elements </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="907" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="906" bodyend="909"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a01d2cf2574914dfa666cf82960860d91" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WebuntisAPI.WebUntisAPI.loadTeacherList</definition>
+        <argsstring>(String data)</argsstring>
+        <name>loadTeacherList</name>
+        <param>
+          <type>String</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Loads teachers from JSON String to Buffer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON String of Web Request </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="361" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="360" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a8dc0b66c157716f489344e296c27facd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WebuntisAPI.WebUntisAPI.LoadKlassenList</definition>
+        <argsstring>(string data)</argsstring>
+        <name>LoadKlassenList</name>
+        <param>
+          <type>string</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load classes <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Containing JSON String </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="418" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="417" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1aef4041fbd5cd7758ef4cbe4ae50717ab" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WebuntisAPI.WebUntisAPI.loadSubjectList</definition>
+        <argsstring>(String data)</argsstring>
+        <name>loadSubjectList</name>
+        <param>
+          <type>String</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="466" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="465" bodyend="495"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a4b605f1d0b7614ddb3ddc35b19f3f346" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WebuntisAPI.WebUntisAPI.loadDepartmentList</definition>
+        <argsstring>(String data)</argsstring>
+        <name>loadDepartmentList</name>
+        <param>
+          <type>String</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>loadDepartmentList </para>        </briefdescription>
+        <detaileddescription>
+<para>loads the JSON string into the buffer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON String </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="525" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="524" bodyend="555"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1af39cac058e183e05a15eac2eb2089007" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WebuntisAPI.WebUntisAPI.loadHolidayList</definition>
+        <argsstring>(String data)</argsstring>
+        <name>loadHolidayList</name>
+        <param>
+          <type>String</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>loadHolidayList </para>        </briefdescription>
+        <detaileddescription>
+<para>Loads data into buffer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contains the JSon String </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="583" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="582" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a24fce1e60fd42c097c6ae173b8ac4d86" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WebuntisAPI.WebUntisAPI.loadSchoolyearList</definition>
+        <argsstring>(String data)</argsstring>
+        <name>loadSchoolyearList</name>
+        <param>
+          <type>String</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>loadSchoolyearList </para>        </briefdescription>
+        <detaileddescription>
+<para>loads Schoolyears into buffer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contains JSON string for Schoolyears </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="646" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="645" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a466ca46cfdfd0e84870a78d735f41bb5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WebuntisAPI.WebUntisAPI.loadTimeTableElementList</definition>
+        <argsstring>(String data)</argsstring>
+        <name>loadTimeTableElementList</name>
+        <param>
+          <type>String</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>load loadTimeTableElementList </para>        </briefdescription>
+        <detaileddescription>
+<para>Loads the Timetable elements list  data is a JSON String containing the data from Request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="708" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="707" bodyend="803"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a12ba017ff589b357c11136bc5bb7c10a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TimeTableId</type>
+        <definition>TimeTableId WebuntisAPI.WebUntisAPI.getTimeTableId</definition>
+        <argsstring>(String idString, int s, String data, char[] dataCharArr)</argsstring>
+        <name>getTimeTableId</name>
+        <param>
+          <type>String</type>
+          <declname>idString</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>char[]</type>
+          <declname>dataCharArr</declname>
+        </param>
+        <briefdescription>
+<para>getTimeTableId </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="813" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="812" bodyend="889"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="140" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="139" bodyend="173"/>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="331" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="330" bodyend="910"/>
     <listofallmembers>
       <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1aaf1ebc41017119125b684cbd1dd2c52b" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>connection</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1af4ce66d44d74dd5c9c8dc14a4a41f75e" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>departments</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a779a92b63fa946f6f78443c73288a47d" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getDepartment</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a6283a2b844c88aba6121312691b561c4" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getDepartments</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a345622fe756645e9922802172386650b" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getHoliday</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1adcadbeb03e548258501c3f095375375a" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getHolidays</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1ad9f81e68ec2e53ddb3538a1386f1e285" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getKlasse</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1af4d855ceab062d121b86c73ec6d963af" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getKlassen</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a098a31245679e053a3ea4ed24a682917" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getSchoolyear</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a2d8d22c88e987371e5215d0e191e6fd1" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getSchoolyears</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a4ba48e849228d5b2403dc06f1430f41a" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getSubject</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a6e81b3b45aede6785f256bf4804a0e16" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getSubjects</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1ae0ff36ba0b419981afa923a3d39a39da" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getTeacher</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a6224a42969b28de78a9370745fb44efb" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getTeachers</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1ab65edf15b17f3d493d1145f746939db5" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getTimeTableElement</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a3c70ef5f1c3785c9ce61724b8456922b" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getTimeTableElements</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a12ba017ff589b357c11136bc5bb7c10a" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>getTimeTableId</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a61a75362195a1e3b03eaeaafcf577577" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>holidays</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a878b0a3caa3dd47413b6b6de7928319a" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>KEY_TIMETABLE_Klasse</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a71c1728202672867d91eaac73fdf8d26" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>KEY_TIMETABLE_Room</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a3e09c1c77ac67a2dd3065737213b775e" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>KEY_TIMETABLE_Student</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a675f0bc99b9300bfb0b582df0b1fd5a7" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>KEY_TIMETABLE_Subject</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1ad93ea508e78c71d5b4a97bab65322115" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>KEY_TIMETABLE_Teacher</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a5f878f0c206ebd909ff3f199d5f8ea41" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>klassen</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a4b605f1d0b7614ddb3ddc35b19f3f346" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>loadDepartmentList</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1af39cac058e183e05a15eac2eb2089007" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>loadHolidayList</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a8dc0b66c157716f489344e296c27facd" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>LoadKlassenList</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a24fce1e60fd42c097c6ae173b8ac4d86" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>loadSchoolyearList</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1aef4041fbd5cd7758ef4cbe4ae50717ab" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>loadSubjectList</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a01d2cf2574914dfa666cf82960860d91" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>loadTeacherList</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a466ca46cfdfd0e84870a78d735f41bb5" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>loadTimeTableElementList</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a305b1dddc844c15623846f139fbcd257" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>schoolyears</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a5bd384eb0c970dcd5e5d39485a8f655f" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>subjects</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1a48a16bd8917c9918ba2a4b057abf2a74" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>teachers</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1accbe8890d7be58e149c3856f92e0a159" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>timeTableElements</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_a_p_i_1ab63b122fb71102686f96b2a79fafb8b8" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisAPI</scope><name>WebUntisAPI</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

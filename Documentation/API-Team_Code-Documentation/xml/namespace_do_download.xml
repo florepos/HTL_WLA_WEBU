@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespace_do_download" kind="namespace">
+    <compoundname>DoDownload</compoundname>
+    <innerclass refid="class_do_download_1_1_request_state" prot="public">DoDownload::RequestState</innerclass>
+    <innerclass refid="class_do_download_1_1_http_web_request___begin_get_response" prot="public">DoDownload::HttpWebRequest_BeginGetResponse</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="28"/>
+  </compounddef>
+</doxygen>

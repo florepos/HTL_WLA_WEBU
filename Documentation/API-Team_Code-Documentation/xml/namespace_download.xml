@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespace_download" kind="namespace">
+    <compoundname>Download</compoundname>
+    <innerclass refid="class_download_1_1_request_state" prot="public">Download::RequestState</innerclass>
+    <innerclass refid="class_download_1_1_http_web_request___begin_get_response" prot="public">Download::HttpWebRequest_BeginGetResponse</innerclass>
+    <briefdescription>
+<para><ref refid="namespace_download" kindref="compound">Download</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Contains Funcions to <ref refid="namespace_download" kindref="compound">Download</ref> </para>    </detaileddescription>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="915"/>
+  </compounddef>
+</doxygen>

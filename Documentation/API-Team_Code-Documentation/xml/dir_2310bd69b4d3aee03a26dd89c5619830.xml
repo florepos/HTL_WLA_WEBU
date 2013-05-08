@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_2310bd69b4d3aee03a26dd89c5619830" kind="dir">
+    <compoundname>C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug</compoundname>
+    <innerfile refid="_app_8g_8cs">App.g.cs</innerfile>
+    <innerfile refid="_app_8g_8i_8cs">App.g.i.cs</innerfile>
+    <innerfile refid="_main_page_8g_8cs">MainPage.g.cs</innerfile>
+    <innerfile refid="_main_page_8g_8i_8cs">MainPage.g.i.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/"/>
+  </compounddef>
+</doxygen>

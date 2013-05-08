@@ -14,7 +14,7 @@
 <para>Field containing id </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="75" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="75" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="282" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="282" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_time_table_element_1a2ce093cea22aa8960523959541d15d02" prot="public" static="no" mutable="no">
         <type>DateTime</type>
@@ -27,7 +27,7 @@
 <para>Field containing date of the lesson </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="76" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="76" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="283" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="283" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_time_table_element_1a9a7059aea921d721fea81b09882c8b2f" prot="public" static="no" mutable="no">
         <type>DateTime</type>
@@ -40,7 +40,7 @@
 <para>Field containing start of the hour </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="77" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="77" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="284" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="284" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_time_table_element_1a0ef904dd3308b39f0ef4af265e428544" prot="public" static="no" mutable="no">
         <type>DateTime</type>
@@ -53,7 +53,7 @@
 <para>Field containing end of the hour </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="78" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="78" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="285" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="285" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_time_table_element_1ab3f7530ba709811a0f080b9f25ee3b76" prot="public" static="no" mutable="no">
         <type>int[]</type>
@@ -66,7 +66,7 @@
 <para>Field containing array of ids of classes </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="79" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="79" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="286" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="286" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_time_table_element_1a3603be7f40d3358ce0f1a9a0b583cae6" prot="public" static="no" mutable="no">
         <type>int[]</type>
@@ -79,7 +79,7 @@
 <para>Field containing array of ids of subjects </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="80" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="80" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="287" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="287" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_time_table_element_1add1b2a25e2b6c0c7cb02ef57c6b2ea6b" prot="public" static="no" mutable="no">
         <type>int[]</type>
@@ -92,14 +92,14 @@
 <para>Field containing ids of rooms </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="81" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="81" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="288" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="288" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para><ref refid="struct_webuntis_a_p_i_1_1_types_1_1_time_table_element" kindref="compound">WebuntisAPI::Types::TimeTableElement</ref>. </para>    </briefdescription>
     <detaileddescription>
 <para>The Structure to save information about an element which is a cell in a table </para>    </detaileddescription>
-    <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="74" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="73" bodyend="82"/>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="281" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="280" bodyend="289"/>
     <listofallmembers>
       <member refid="struct_webuntis_a_p_i_1_1_types_1_1_time_table_element_1ab3f7530ba709811a0f080b9f25ee3b76" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::TimeTableElement</scope><name>classids</name></member>
       <member refid="struct_webuntis_a_p_i_1_1_types_1_1_time_table_element_1a2ce093cea22aa8960523959541d15d02" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::TimeTableElement</scope><name>date_lesson</name></member>

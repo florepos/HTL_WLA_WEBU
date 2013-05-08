@@ -13,6 +13,6 @@
 <para><ref refid="namespace_webuntis_a_p_i_1_1_types" kindref="compound">WebuntisAPI::Types</ref> Namespase. </para>    </briefdescription>
     <detaileddescription>
 <para>This contains the structure-variables for x-Change with the APP (Coding) </para>    </detaileddescription>
-    <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="17"/>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="224"/>
   </compounddef>
 </doxygen>
