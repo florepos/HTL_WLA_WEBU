@@ -1,0 +1,3 @@
+GantDiagramm überarbeiten
+Probleme dokumentieren -->DesignTeam Hyper-V
+Schnittstellen App-Design genau definieren
