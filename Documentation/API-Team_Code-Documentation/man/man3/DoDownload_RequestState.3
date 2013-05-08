@@ -1,0 +1,51 @@
+.TH "DoDownload.RequestState" 3 "Mit Mai 8 2013" "WU-APP_API" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DoDownload.RequestState \- 
+.PP
+\fBDoDownload::RequestState\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Öffentliche Attribute"
+
+.in +1c
+.ti -1c
+.RI "StringBuilder \fBrequestData\fP"
+.br
+.ti -1c
+.RI "byte[] \fBBufferRead\fP"
+.br
+.ti -1c
+.RI "HttpWebRequest \fBrequest\fP"
+.br
+.ti -1c
+.RI "HttpWebResponse \fBresponse\fP"
+.br
+.ti -1c
+.RI "Stream \fBstreamResponse\fP"
+.br
+.in -1c
+.SH "Ausführliche Beschreibung"
+.PP 
+\fBDoDownload::RequestState\fP\&. 
+
+State of the \fBDownload\fP 
+.SH "Dokumentation der Datenelemente"
+.PP 
+.SS "byte [] DoDownload\&.RequestState\&.BufferRead"
+Buffer to \fBDownload\fP the Project 
+.SS "HttpWebRequest DoDownload\&.RequestState\&.request"
+The Data to send to the Server 
+.SS "StringBuilder DoDownload\&.RequestState\&.requestData"
+An Object to crate a String 
+.SS "HttpWebResponse DoDownload\&.RequestState\&.response"
+The Data to get from the Server 
+.SS "Stream DoDownload\&.RequestState\&.streamResponse"
+The Stream of the Data in the Server 
+
+.SH "Autor"
+.PP 
+Automatisch erzeugt von Doxygen für WU-APP_API aus dem Quellcode\&.

@@ -1,4 +1,4 @@
-.TH "WebuntisAPI.WebUntisAPI" 3 "Wed Mar 20 2013" "WebuntisAPI" \" -*- nroff -*-
+.TH "WebuntisAPI.WebUntisAPI" 3 "Mit Mai 8 2013" "WU-APP_API" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,8 +6,186 @@ WebuntisAPI.WebUntisAPI \-
 .SH SYNOPSIS
 .br
 .PP
+.SS "Öffentliche Methoden"
 
+.in +1c
+.ti -1c
+.RI "\fBWebUntisAPI\fP (Uri URL, String Schule, String Benutzer, String Passwort)"
+.br
+.ti -1c
+.RI "\fBTypes\&.Teacher\fP \fBgetTeacher\fP (int id)"
+.br
+.RI "\fIGet Teachers\&. \fP"
+.ti -1c
+.RI "List< \fBTypes\&.Teacher\fP > \fBgetTeachers\fP ()"
+.br
+.ti -1c
+.RI "\fBTypes\&.Klasse\fP \fBgetKlasse\fP (int id)"
+.br
+.ti -1c
+.RI "List< \fBTypes\&.Klasse\fP > \fBgetKlassen\fP ()"
+.br
+.ti -1c
+.RI "\fBTypes\&.Subject\fP \fBgetSubject\fP (int id)"
+.br
+.RI "\fIgetSubject \fP"
+.ti -1c
+.RI "List< \fBTypes\&.Subject\fP > \fBgetSubjects\fP ()"
+.br
+.RI "\fI\fBgetSubjects()\fP \fP"
+.ti -1c
+.RI "\fBTypes\&.Department\fP \fBgetDepartment\fP (int id)"
+.br
+.RI "\fIgetDepartment \fP"
+.ti -1c
+.RI "List< \fBTypes\&.Department\fP > \fBgetDepartments\fP ()"
+.br
+.ti -1c
+.RI "\fBTypes\&.Holiday\fP \fBgetHoliday\fP (int id)"
+.br
+.RI "\fIgetHoliday \fP"
+.ti -1c
+.RI "List< \fBTypes\&.Holiday\fP > \fBgetHolidays\fP ()"
+.br
+.ti -1c
+.RI "\fBTypes\&.Schoolyear\fP \fBgetSchoolyear\fP (int id)"
+.br
+.RI "\fIgetSchoolyear \fP"
+.ti -1c
+.RI "List< \fBTypes\&.Schoolyear\fP > \fBgetSchoolyears\fP ()"
+.br
+.RI "\fIgetSchoolyears \fP"
+.ti -1c
+.RI "\fBTypes\&.TimeTableElement\fP \fBgetTimeTableElement\fP (int id)"
+.br
+.RI "\fIWebuntisAPI::getTimeTableElement\&. \fP"
+.ti -1c
+.RI "List< \fBTypes\&.TimeTableElement\fP > \fBgetTimeTableElements\fP ()"
+.br
+.RI "\fIgetTimeTableElements \fP"
+.in -1c
+.SS "Öffentliche Attribute"
 
-.SH "Author"
+.in +1c
+.ti -1c
+.RI "const int \fBKEY_TIMETABLE_Klasse\fP = 1"
+.br
+.ti -1c
+.RI "const int \fBKEY_TIMETABLE_Teacher\fP = 2"
+.br
+.ti -1c
+.RI "const int \fBKEY_TIMETABLE_Subject\fP = 3"
+.br
+.ti -1c
+.RI "const int \fBKEY_TIMETABLE_Room\fP = 4"
+.br
+.ti -1c
+.RI "const int \fBKEY_TIMETABLE_Student\fP = 5"
+.br
+.in -1c
+.SH "Beschreibung der Konstruktoren und Destruktoren"
 .PP 
-Generated automatically by Doxygen for WebuntisAPI from the source code\&.
+.SS "WebuntisAPI\&.WebUntisAPI\&.WebUntisAPI (UriURL, StringSchule, StringBenutzer, StringPasswort)\fC [inline]\fP"
+API to APP-Team 
+.PP
+\fBParameter:\fP
+.RS 4
+\fIURL\fP The URL of the WU Server 
+.br
+\fISchule\fP The Name of the School 
+.br
+\fIBenutzer\fP The Username of the User 
+.br
+\fIPasswort\fP The Password of the User 
+.RE
+.PP
+
+.SH "Dokumentation der Elementfunktionen"
+.PP 
+.SS "\fBTypes\&.Department\fP WebuntisAPI\&.WebUntisAPI\&.getDepartment (intid)\fC [inline]\fP"
+
+.PP
+getDepartment Get the department by id 
+.PP
+\fBParameter:\fP
+.RS 4
+\fIid\fP Id of department to search 
+.RE
+.PP
+
+.SS "\fBTypes\&.Holiday\fP WebuntisAPI\&.WebUntisAPI\&.getHoliday (intid)\fC [inline]\fP"
+
+.PP
+getHoliday Search for Holyday 
+.PP
+\fBParameter:\fP
+.RS 4
+\fIid\fP id of holiday 
+.RE
+.PP
+
+.SS "\fBTypes\&.Klasse\fP WebuntisAPI\&.WebUntisAPI\&.getKlasse (intid)\fC [inline]\fP"
+getKlasse 
+.SS "List<\fBTypes\&.Klasse\fP> WebuntisAPI\&.WebUntisAPI\&.getKlassen ()\fC [inline]\fP"
+getKlassen 
+.SS "\fBTypes\&.Schoolyear\fP WebuntisAPI\&.WebUntisAPI\&.getSchoolyear (intid)\fC [inline]\fP"
+
+.PP
+getSchoolyear getSchoolyear gets the schoolyear 
+.PP
+\fBParameter:\fP
+.RS 4
+\fIid\fP is the id of the schoolyear 
+.RE
+.PP
+
+.SS "List<\fBTypes\&.Schoolyear\fP> WebuntisAPI\&.WebUntisAPI\&.getSchoolyears ()\fC [inline]\fP"
+
+.PP
+getSchoolyears get all Schoolyears 
+.SS "\fBTypes\&.Subject\fP WebuntisAPI\&.WebUntisAPI\&.getSubject (intid)\fC [inline]\fP"
+
+.PP
+getSubject \fBParameter:\fP
+.RS 4
+\fIid\fP Id of the Subject element 
+.RE
+.PP
+
+.SS "List<\fBTypes\&.Subject\fP> WebuntisAPI\&.WebUntisAPI\&.getSubjects ()\fC [inline]\fP"
+
+.PP
+\fBgetSubjects()\fP Get the Complete Buffer of subjects 
+.SS "\fBTypes\&.Teacher\fP WebuntisAPI\&.WebUntisAPI\&.getTeacher (intid)\fC [inline]\fP"
+
+.PP
+Get Teachers\&. \fBParameter:\fP
+.RS 4
+\fIid\fP The ID of the Teacher 
+.RE
+.PP
+
+.SS "\fBTypes\&.TimeTableElement\fP WebuntisAPI\&.WebUntisAPI\&.getTimeTableElement (intid)\fC [inline]\fP"
+
+.PP
+WebuntisAPI::getTimeTableElement\&. Get The Timetable Element from Buffer 
+.SS "List<\fBTypes\&.TimeTableElement\fP> WebuntisAPI\&.WebUntisAPI\&.getTimeTableElements ()\fC [inline]\fP"
+
+.PP
+getTimeTableElements get all Timetable Elements 
+.SH "Dokumentation der Datenelemente"
+.PP 
+.SS "const int WebuntisAPI\&.WebUntisAPI\&.KEY_TIMETABLE_Klasse = 1"
+Consant lt\&. API of WU for TimeTable 
+.SS "const int WebuntisAPI\&.WebUntisAPI\&.KEY_TIMETABLE_Room = 4"
+Constant lt\&. API of WU for TimeTable 
+.SS "const int WebuntisAPI\&.WebUntisAPI\&.KEY_TIMETABLE_Student = 5"
+Constant lt\&. API of WU for TimeTable 
+.SS "const int WebuntisAPI\&.WebUntisAPI\&.KEY_TIMETABLE_Subject = 3"
+Constant lt\&. API of WU for TimeTable 
+.SS "const int WebuntisAPI\&.WebUntisAPI\&.KEY_TIMETABLE_Teacher = 2"
+Constant lt\&. API of WU for TimeTable 
+
+.SH "Autor"
+.PP 
+Automatisch erzeugt von Doxygen für WU-APP_API aus dem Quellcode\&.

@@ -9,7 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 
-namespace AppTestSolution.otherClasses
+namespace WebUntisAPP
 {
     /// <summary>
     /// This Class represents a Subject with one or more Teachers, with on ore

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>TestForWebUntis</title>
+    <detaileddescription>
+<para>Main project directory of the API Team</para><para>Open the sln file to use the project.</para><para><itemizedlist>
+<listitem><para>Project type C#</para></listitem><listitem><para>WP7 SDK 2010 Project</para></listitem></itemizedlist>
+</para><para>Code directory of the API Team</para><para>Open the sln file in the directory above to use the project.</para><para><heading level="1">MainPage.xaml</heading>
+</para><para>This file contains an UI for testing purposes only <heading level="1">MainPage.xaml.cs</heading>
+</para><para>Code for the Testing UI <heading level="1">App.xaml.cs</heading>
+</para><para>App Initalisation <heading level="1">WebUntis.cs</heading>
+</para><para>Contains the Code from the API Team. For Documentation please see <ulink url="https://github.com/florepos/HTL_WLA_WEBU/tree/master/Documentation/API-Team_Code-Documentation">Documentation Directory</ulink> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

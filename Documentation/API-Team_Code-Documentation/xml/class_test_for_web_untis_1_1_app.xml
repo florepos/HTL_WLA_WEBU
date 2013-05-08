@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_test_for_web_untis_1_1_app" kind="class" prot="public">
+    <compoundname>TestForWebUntis::App</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Application</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Application</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Application</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_test_for_web_untis_1_1_app_1a3de6c087bb9af076ec1ee6eaf47f5cfa" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>PhoneApplicationFrame</type>
+        <definition>PhoneApplicationFrame TestForWebUntis.App.RootFrame</definition>
+        <argsstring></argsstring>
+        <name>RootFrame</name>
+        <briefdescription>
+<para>Bietet einen einfachen Zugriff auf den Stammframe der Phone-Anwendung. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Der Stammframe der Phone-Anwendung.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" line="24" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_test_for_web_untis_1_1_app_1a2dad8368a8beda605fa6ddfa0f65202b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TestForWebUntis.App.phoneApplicationInitialized</definition>
+        <argsstring></argsstring>
+        <name>phoneApplicationInitialized</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" line="109" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_test_for_web_untis_1_1_app_1a51dbfb08055332bbf7cddfc52e1879fa" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TestForWebUntis.App::_contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/App.g.cs" line="38" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/App.g.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_app_1a1cfa227a9beb595ed54f345673442556" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TestForWebUntis.App.App</definition>
+        <argsstring>()</argsstring>
+        <name>App</name>
+        <briefdescription>
+<para>Konstruktor für das Application-Objekt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" line="30" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" bodystart="29" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_app_1a010a481103b741a79d7b6d3e4bf36efd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestForWebUntis.App.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <briefdescription>
+<para>InitializeComponent </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/App.g.cs" line="44" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/App.g.cs" bodystart="44" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_app_1a010a481103b741a79d7b6d3e4bf36efd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestForWebUntis.App.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <briefdescription>
+<para>InitializeComponent </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/App.g.i.cs" line="44" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/App.g.i.cs" bodystart="44" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_app_1ae05a875bb9eadceae74ebb5ea866527b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestForWebUntis.App.Application_Launching</definition>
+        <argsstring>(object sender, LaunchingEventArgs e)</argsstring>
+        <name>Application_Launching</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>LaunchingEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" line="65" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_app_1a3394da03571e53005d34b7a81fbc1a81" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestForWebUntis.App.Application_Activated</definition>
+        <argsstring>(object sender, ActivatedEventArgs e)</argsstring>
+        <name>Application_Activated</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>ActivatedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" line="71" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_app_1aeb28b6e859a64f1d6f86aa6b5634485b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestForWebUntis.App.Application_Deactivated</definition>
+        <argsstring>(object sender, DeactivatedEventArgs e)</argsstring>
+        <name>Application_Deactivated</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>DeactivatedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" line="77" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_app_1a6905fdb2e8e884e7eec88d3ec24ee165" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestForWebUntis.App.Application_Closing</definition>
+        <argsstring>(object sender, ClosingEventArgs e)</argsstring>
+        <name>Application_Closing</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>ClosingEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" line="83" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_app_1aa354a44a651fe2e90b5290a19108ad7d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestForWebUntis.App.RootFrame_NavigationFailed</definition>
+        <argsstring>(object sender, NavigationFailedEventArgs e)</argsstring>
+        <name>RootFrame_NavigationFailed</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>NavigationFailedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" line="88" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" bodystart="87" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_app_1a76d5a00b62d9f69174727f29ce2ac451" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestForWebUntis.App.Application_UnhandledException</definition>
+        <argsstring>(object sender, ApplicationUnhandledExceptionEventArgs e)</argsstring>
+        <name>Application_UnhandledException</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>ApplicationUnhandledExceptionEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" line="98" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" bodystart="97" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_app_1ae37280afd08a20c8e49f65ceedd72d50" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestForWebUntis.App.InitializePhoneApplication</definition>
+        <argsstring>()</argsstring>
+        <name>InitializePhoneApplication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" line="113" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" bodystart="112" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_app_1a27ff99d52c0f65f0ee6425174cdfd77b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestForWebUntis.App.CompleteInitializePhoneApplication</definition>
+        <argsstring>(object sender, NavigationEventArgs e)</argsstring>
+        <name>CompleteInitializePhoneApplication</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>NavigationEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" line="131" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" bodystart="130" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>TestForWebUntis.App</label>
+        <link refid="class_test_for_web_untis_1_1_app"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>System::Windows::Application</label>
+      </node>
+      <node id="2">
+        <label>Application</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>TestForWebUntis.App</label>
+        <link refid="class_test_for_web_untis_1_1_app"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>System::Windows::Application</label>
+      </node>
+      <node id="5">
+        <label>Application</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" line="19" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/App.xaml.cs" bodystart="18" bodyend="141"/>
+    <listofallmembers>
+      <member refid="class_test_for_web_untis_1_1_app_1a51dbfb08055332bbf7cddfc52e1879fa" prot="private" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>_contentLoaded</name></member>
+      <member refid="class_test_for_web_untis_1_1_app_1a1cfa227a9beb595ed54f345673442556" prot="public" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>App</name></member>
+      <member refid="class_test_for_web_untis_1_1_app_1a3394da03571e53005d34b7a81fbc1a81" prot="private" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>Application_Activated</name></member>
+      <member refid="class_test_for_web_untis_1_1_app_1a6905fdb2e8e884e7eec88d3ec24ee165" prot="private" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>Application_Closing</name></member>
+      <member refid="class_test_for_web_untis_1_1_app_1aeb28b6e859a64f1d6f86aa6b5634485b" prot="private" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>Application_Deactivated</name></member>
+      <member refid="class_test_for_web_untis_1_1_app_1ae05a875bb9eadceae74ebb5ea866527b" prot="private" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>Application_Launching</name></member>
+      <member refid="class_test_for_web_untis_1_1_app_1a76d5a00b62d9f69174727f29ce2ac451" prot="private" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>Application_UnhandledException</name></member>
+      <member refid="class_test_for_web_untis_1_1_app_1a27ff99d52c0f65f0ee6425174cdfd77b" prot="private" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>CompleteInitializePhoneApplication</name></member>
+      <member refid="class_test_for_web_untis_1_1_app_1a010a481103b741a79d7b6d3e4bf36efd" prot="public" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>InitializeComponent</name></member>
+      <member refid="class_test_for_web_untis_1_1_app_1a010a481103b741a79d7b6d3e4bf36efd" prot="public" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>InitializeComponent</name></member>
+      <member refid="class_test_for_web_untis_1_1_app_1ae37280afd08a20c8e49f65ceedd72d50" prot="private" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>InitializePhoneApplication</name></member>
+      <member refid="class_test_for_web_untis_1_1_app_1a2dad8368a8beda605fa6ddfa0f65202b" prot="private" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>phoneApplicationInitialized</name></member>
+      <member refid="class_test_for_web_untis_1_1_app_1a3de6c087bb9af076ec1ee6eaf47f5cfa" prot="public" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>RootFrame</name></member>
+      <member refid="class_test_for_web_untis_1_1_app_1aa354a44a651fe2e90b5290a19108ad7d" prot="private" virt="non-virtual"><scope>TestForWebUntis::App</scope><name>RootFrame_NavigationFailed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

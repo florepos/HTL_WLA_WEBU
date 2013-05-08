@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_test_for_web_untis_1_1_main_page" kind="class" prot="public">
+    <compoundname>TestForWebUntis::MainPage</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PhoneApplicationPage</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">PhoneApplicationPage</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">PhoneApplicationPage</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_test_for_web_untis_1_1_main_page_1a70188368d75bce8c6de2100fa2b0f320" prot="private" static="no" mutable="no">
+        <type><ref refid="class_do_download_1_1_http_web_request___begin_get_response" kindref="compound">HttpWebRequest_BeginGetResponse</ref></type>
+        <definition>HttpWebRequest_BeginGetResponse TestForWebUntis.MainPage.dod</definition>
+        <argsstring></argsstring>
+        <name>dod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/MainPage.xaml.cs" line="24" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/MainPage.xaml.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_test_for_web_untis_1_1_main_page_1a89b98d8ca4ff480263704f2e71d2e1bb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TestForWebUntis.MainPage::_contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.cs" line="47" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_test_for_web_untis_1_1_main_page_1ae3e22cb1b7d518f1a145fcbcbdb2f449" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.Grid</type>
+        <definition>System Windows Controls Grid TestForWebUntis.MainPage::LayoutRoot</definition>
+        <argsstring></argsstring>
+        <name>LayoutRoot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.cs" line="39" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_test_for_web_untis_1_1_main_page_1ac0d3383e0cfd740a24844a7e040c6115" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.Grid</type>
+        <definition>System Windows Controls Grid TestForWebUntis.MainPage::ContentPanel</definition>
+        <argsstring></argsstring>
+        <name>ContentPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.cs" line="41" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_test_for_web_untis_1_1_main_page_1a6bc7eafb5a905a265a2b008c63f1c79d" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.Button</type>
+        <definition>System Windows Controls Button TestForWebUntis.MainPage::buttonSendRequest</definition>
+        <argsstring></argsstring>
+        <name>buttonSendRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.cs" line="43" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_test_for_web_untis_1_1_main_page_1a7ae7cc2f834658548820101c4ccd90a7" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.TextBox</type>
+        <definition>System Windows Controls TextBox TestForWebUntis.MainPage::textBoxRequest</definition>
+        <argsstring></argsstring>
+        <name>textBoxRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.cs" line="45" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_main_page_1a4db5495aaf66cd98c7da7db13d6daca8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TestForWebUntis.MainPage.MainPage</definition>
+        <argsstring>()</argsstring>
+        <name>MainPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/MainPage.xaml.cs" line="27" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/MainPage.xaml.cs" bodystart="26" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_main_page_1ab6a5d1396d93a1c7b7bd030b1d406358" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestForWebUntis.MainPage.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <briefdescription>
+<para>InitializeComponent </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.cs" line="53" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.cs" bodystart="53" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_main_page_1ab6a5d1396d93a1c7b7bd030b1d406358" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestForWebUntis.MainPage.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <briefdescription>
+<para>InitializeComponent </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.i.cs" line="53" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/obj/Debug/MainPage.g.i.cs" bodystart="53" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_test_for_web_untis_1_1_main_page_1a11e15bae891472ca350e5d35905d9484" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TestForWebUntis.MainPage.button1_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>button1_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/MainPage.xaml.cs" line="36" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/MainPage.xaml.cs" bodystart="35" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>Microsoft::Phone::Controls::PhoneApplicationPage</label>
+      </node>
+      <node id="18">
+        <label>PhoneApplicationPage</label>
+      </node>
+      <node id="16">
+        <label>TestForWebUntis.MainPage</label>
+        <link refid="class_test_for_web_untis_1_1_main_page"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>Microsoft::Phone::Controls::PhoneApplicationPage</label>
+      </node>
+      <node id="21">
+        <label>PhoneApplicationPage</label>
+      </node>
+      <node id="22">
+        <label>System</label>
+      </node>
+      <node id="19">
+        <label>TestForWebUntis.MainPage</label>
+        <link refid="class_test_for_web_untis_1_1_main_page"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>textBoxRequest</edgelabel>
+          <edgelabel>LayoutRoot</edgelabel>
+          <edgelabel>buttonSendRequest</edgelabel>
+          <edgelabel>ContentPanel</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/MainPage.xaml.cs" line="21" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/MainPage.xaml.cs" bodystart="20" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_test_for_web_untis_1_1_main_page_1a89b98d8ca4ff480263704f2e71d2e1bb" prot="private" virt="non-virtual"><scope>TestForWebUntis::MainPage</scope><name>_contentLoaded</name></member>
+      <member refid="class_test_for_web_untis_1_1_main_page_1a11e15bae891472ca350e5d35905d9484" prot="private" virt="non-virtual"><scope>TestForWebUntis::MainPage</scope><name>button1_Click</name></member>
+      <member refid="class_test_for_web_untis_1_1_main_page_1a6bc7eafb5a905a265a2b008c63f1c79d" prot="package" virt="non-virtual"><scope>TestForWebUntis::MainPage</scope><name>buttonSendRequest</name></member>
+      <member refid="class_test_for_web_untis_1_1_main_page_1ac0d3383e0cfd740a24844a7e040c6115" prot="package" virt="non-virtual"><scope>TestForWebUntis::MainPage</scope><name>ContentPanel</name></member>
+      <member refid="class_test_for_web_untis_1_1_main_page_1a70188368d75bce8c6de2100fa2b0f320" prot="private" virt="non-virtual"><scope>TestForWebUntis::MainPage</scope><name>dod</name></member>
+      <member refid="class_test_for_web_untis_1_1_main_page_1ab6a5d1396d93a1c7b7bd030b1d406358" prot="public" virt="non-virtual"><scope>TestForWebUntis::MainPage</scope><name>InitializeComponent</name></member>
+      <member refid="class_test_for_web_untis_1_1_main_page_1ab6a5d1396d93a1c7b7bd030b1d406358" prot="public" virt="non-virtual"><scope>TestForWebUntis::MainPage</scope><name>InitializeComponent</name></member>
+      <member refid="class_test_for_web_untis_1_1_main_page_1ae3e22cb1b7d518f1a145fcbcbdb2f449" prot="package" virt="non-virtual"><scope>TestForWebUntis::MainPage</scope><name>LayoutRoot</name></member>
+      <member refid="class_test_for_web_untis_1_1_main_page_1a4db5495aaf66cd98c7da7db13d6daca8" prot="public" virt="non-virtual"><scope>TestForWebUntis::MainPage</scope><name>MainPage</name></member>
+      <member refid="class_test_for_web_untis_1_1_main_page_1a7ae7cc2f834658548820101c4ccd90a7" prot="package" virt="non-virtual"><scope>TestForWebUntis::MainPage</scope><name>textBoxRequest</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

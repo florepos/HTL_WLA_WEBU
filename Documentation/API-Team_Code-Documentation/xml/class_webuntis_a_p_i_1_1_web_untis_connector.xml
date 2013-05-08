@@ -14,7 +14,7 @@
 <para>Field containing Webrequest to connect to WebUntis </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="86" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="86" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="293" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="293" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_connector_1aeb598866c0fb4702c0543c7c333a8327" prot="private" static="no" mutable="no">
         <type>String</type>
@@ -27,7 +27,7 @@
 <para>Field containing Username of WebUntis </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="87" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="87" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="294" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="294" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_connector_1a3d1c8a47e4187884e858344d402dfe05" prot="private" static="no" mutable="no">
         <type>String</type>
@@ -40,7 +40,7 @@
 <para>Field containing Password for user </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="88" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="88" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="295" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="295" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_connector_1a8c4c4379726cd94773d08bf901c95245" prot="private" static="no" mutable="no">
         <type>String</type>
@@ -53,7 +53,7 @@
 <para>Field containing Sessionid for Connection </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="89" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="89" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="296" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="296" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_connector_1ab7c6564d1ba0e7c2e0787573cdcaabd9" prot="private" static="no" mutable="no">
         <type>Uri</type>
@@ -66,18 +66,35 @@
 <para>Field containing Connectionstring </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="90" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="90" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="297" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_webuntis_a_p_i_1_1_web_untis_connector_1a2124d93852955ed37d2f3f13b4f476e2" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String WebuntisAPI.WebUntisConnector.schule</definition>
+        <argsstring></argsstring>
+        <name>schule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing School name </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="298" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="298" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_connector_1ab1df017bfe02cdf931eed93bc00c6d8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_connector_1a869ba1eee9abfcaccd47568968907c6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>WebuntisAPI.WebUntisConnector.WebUntisConnector</definition>
-        <argsstring>(String connection, String User, String Password)</argsstring>
+        <argsstring>(Uri connection, String Schule, String User, String Password)</argsstring>
         <name>WebUntisConnector</name>
         <param>
-          <type>String</type>
+          <type>Uri</type>
           <declname>connection</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>Schule</declname>
         </param>
         <param>
           <type>String</type>
@@ -93,20 +110,57 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="92" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="91" bodyend="137"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="300" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="299" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_connector_1ab201f5e754219e27cc4a9f4605c3a7a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String WebuntisAPI.WebUntisConnector.runJSONRequest</definition>
+        <argsstring>(String Method, String Params)</argsstring>
+        <name>runJSONRequest</name>
+        <param>
+          <type>String</type>
+          <declname>Method</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>Params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="321" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="320" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="class_webuntis_a_p_i_1_1_web_untis_connector_1a167133c8790268a2822e5221268359fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WebuntisAPI.WebUntisConnector.doLogin</definition>
+        <argsstring>()</argsstring>
+        <name>doLogin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="325" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="324" bodyend="328"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="85" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="84" bodyend="138"/>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="292" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="291" bodyend="329"/>
     <listofallmembers>
       <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1ab7c6564d1ba0e7c2e0787573cdcaabd9" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>connection</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1a167133c8790268a2822e5221268359fe" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>doLogin</name></member>
       <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1a3d1c8a47e4187884e858344d402dfe05" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>Password</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1ab201f5e754219e27cc4a9f4605c3a7a5" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>runJSONRequest</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1a2124d93852955ed37d2f3f13b4f476e2" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>schule</name></member>
       <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1a8c4c4379726cd94773d08bf901c95245" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>SessionID</name></member>
       <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1aeb598866c0fb4702c0543c7c333a8327" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>User</name></member>
-      <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1ab1df017bfe02cdf931eed93bc00c6d8b" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>WebUntisConnector</name></member>
+      <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1a869ba1eee9abfcaccd47568968907c6a" prot="public" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>WebUntisConnector</name></member>
       <member refid="class_webuntis_a_p_i_1_1_web_untis_connector_1aa2ecece1f54ff8525e91144bfc1f77e3" prot="private" virt="non-virtual"><scope>WebuntisAPI::WebUntisConnector</scope><name>wr</name></member>
     </listofallmembers>
   </compounddef>

@@ -2,46 +2,53 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
   <compounddef id="_assembly_info_8cs" kind="file">
     <compoundname>AssemblyInfo.cs</compoundname>
-    <innernamespace refid="namespace_system_1_1_resources">System::Resources</innernamespace>
     <innernamespace refid="namespace_system_1_1_reflection">System::Reflection</innernamespace>
     <innernamespace refid="namespace_system_1_1_runtime_1_1_compiler_services">System::Runtime::CompilerServices</innernamespace>
     <innernamespace refid="namespace_system_1_1_runtime_1_1_interop_services">System::Runtime::InteropServices</innernamespace>
+    <innernamespace refid="namespace_system_1_1_resources">System::Resources</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="normal">﻿using<sp/>System.Resources;</highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Reflection;</highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Runtime.CompilerServices;</highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Runtime.InteropServices;</highlight></codeline>
+<codeline lineno="1"><highlight class="normal">﻿using<sp/>System.Reflection;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Runtime.CompilerServices;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Runtime.InteropServices;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Resources;</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Allgemeine<sp/>Informationen<sp/>über<sp/>eine<sp/>Assembly<sp/>werden<sp/>über<sp/>folgende<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Attribute<sp/>gesteuert.<sp/>Ändern<sp/>Sie<sp/>diese<sp/>Attributwerte,<sp/>um<sp/>die<sp/>Informationen<sp/>zu<sp/>ändern,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Allgemeine<sp/>Informationen<sp/>über<sp/>eine<sp/>Assembly<sp/>werden<sp/>über<sp/>die<sp/>folgende<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Attributgruppe<sp/>gesteuert.<sp/>Ändern<sp/>Sie<sp/>diese<sp/>Attributwerte,<sp/>um<sp/>die<sp/>Informationen<sp/>zu<sp/>ändern,</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>die<sp/>einer<sp/>Assembly<sp/>zugeordnet<sp/>sind.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal">[assembly:<sp/>AssemblyTitle(</highlight><highlight class="stringliteral">&quot;WebuntisAPI&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">[assembly:<sp/>AssemblyTitle(</highlight><highlight class="stringliteral">&quot;TestForWebUntis&quot;</highlight><highlight class="normal">)]</highlight></codeline>
 <codeline lineno="10"><highlight class="normal">[assembly:<sp/>AssemblyDescription(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)]</highlight></codeline>
 <codeline lineno="11"><highlight class="normal">[assembly:<sp/>AssemblyConfiguration(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)]</highlight></codeline>
 <codeline lineno="12"><highlight class="normal">[assembly:<sp/>AssemblyCompany(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)]</highlight></codeline>
-<codeline lineno="13"><highlight class="normal">[assembly:<sp/>AssemblyProduct(</highlight><highlight class="stringliteral">&quot;WebuntisAPI&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">[assembly:<sp/>AssemblyProduct(</highlight><highlight class="stringliteral">&quot;TestForWebUntis&quot;</highlight><highlight class="normal">)]</highlight></codeline>
 <codeline lineno="14"><highlight class="normal">[assembly:<sp/>AssemblyCopyright(</highlight><highlight class="stringliteral">&quot;Copyright<sp/>©<sp/><sp/>2013&quot;</highlight><highlight class="normal">)]</highlight></codeline>
 <codeline lineno="15"><highlight class="normal">[assembly:<sp/>AssemblyTrademark(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)]</highlight></codeline>
 <codeline lineno="16"><highlight class="normal">[assembly:<sp/>AssemblyCulture(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)]</highlight></codeline>
-<codeline lineno="17"><highlight class="normal">[assembly:<sp/>NeutralResourcesLanguage(</highlight><highlight class="stringliteral">&quot;de&quot;</highlight><highlight class="normal">)]</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Versionsinformationen<sp/>für<sp/>eine<sp/>Assembly<sp/>bestehen<sp/>aus<sp/>den<sp/>folgenden<sp/>vier<sp/>Werten:</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Hauptversion</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Nebenversion<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Buildnummer</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Revision</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Sie<sp/>können<sp/>alle<sp/>Werte<sp/>angeben<sp/>oder<sp/>die<sp/>standardmäßigen<sp/>Build-<sp/>und<sp/>Revisionsnummern<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>durch<sp/>Einsatz<sp/>von<sp/>&apos;*&apos;,<sp/>wie<sp/>in<sp/>nachfolgendem<sp/>Beispiel:</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>[assembly:<sp/>AssemblyVersion(&quot;1.0.*&quot;)]</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal">[assembly:<sp/>AssemblyVersion(</highlight><highlight class="stringliteral">&quot;1.0.0.0&quot;</highlight><highlight class="normal">)]</highlight></codeline>
-<codeline lineno="30"><highlight class="normal">[assembly:<sp/>AssemblyFileVersion(</highlight><highlight class="stringliteral">&quot;1.0.0.0&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Durch<sp/>Festlegen<sp/>von<sp/>ComVisible<sp/>auf<sp/>&quot;false&quot;<sp/>werden<sp/>die<sp/>Typen<sp/>in<sp/>dieser<sp/>Assembly<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>für<sp/>COM-Komponenten<sp/>unsichtbar.<sp/>Wenn<sp/>Sie<sp/>auf<sp/>einen<sp/>Typ<sp/>in<sp/>dieser<sp/>Assembly<sp/>von<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>COM<sp/>aus<sp/>zugreifen<sp/>müssen,<sp/>legen<sp/>Sie<sp/>das<sp/>ComVisible-Attribut<sp/>für<sp/>diesen<sp/>Typ<sp/>auf<sp/>&quot;true&quot;<sp/>fest.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">[assembly:<sp/>ComVisible(</highlight><highlight class="keyword">false</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Die<sp/>folgende<sp/>GUID<sp/>ist<sp/>für<sp/>die<sp/>ID<sp/>der<sp/>typelib,<sp/>wenn<sp/>dieses<sp/>Projekt<sp/>für<sp/>COM<sp/>verfügbar<sp/>gemacht<sp/>wird</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">[assembly:<sp/>Guid(</highlight><highlight class="stringliteral">&quot;9851cd7a-8bdd-4990-9db7-c40647abee1e&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Versionsinformationen<sp/>für<sp/>eine<sp/>Assembly<sp/>bestehen<sp/>aus<sp/>den<sp/>folgenden<sp/>vier<sp/>Werten:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Hauptversion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Nebenversion<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Buildnummer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Revision</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Sie<sp/>können<sp/>alle<sp/>Werte<sp/>angeben<sp/>oder<sp/>die<sp/>Standardwerte<sp/>für<sp/>Revisions-<sp/>und<sp/>Buildnummer<sp/>verwenden<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>übernehmen,<sp/>indem<sp/>Sie<sp/>&quot;*&quot;<sp/>wie<sp/>folgt<sp/>verwenden:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">[assembly:<sp/>AssemblyVersion(</highlight><highlight class="stringliteral">&quot;1.0.0.0&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">[assembly:<sp/>AssemblyFileVersion(</highlight><highlight class="stringliteral">&quot;1.0.0.0&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">[assembly:<sp/>NeutralResourcesLanguageAttribute(</highlight><highlight class="stringliteral">&quot;de-DE&quot;</highlight><highlight class="normal">)]</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/Properties/AssemblyInfo.cs"/>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/Properties/AssemblyInfo.cs"/>
   </compounddef>
 </doxygen>

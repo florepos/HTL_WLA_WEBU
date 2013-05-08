@@ -9,7 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 
-namespace AppTestSolution.otherClasses
+namespace WebUntisAPP
 {
     /// <summary>
     /// This Class transfers the Data from the API-Team Classes to the Design-Team Pages so that
@@ -18,19 +18,66 @@ namespace AppTestSolution.otherClasses
     /// 
     /// --The App-Team
     /// </summary>
-    public class AppClass
+    public class Converter
     {
         #region Variables
 
+        //Variablen für API Team
+        private static Uri URL;
+        private static String school;
+        private static String user;
+        private static String password;
+        WebUntisAPI wAPI = new WebUntisAPI(URL, school, user, password);
 
+        //Teacher
+        private String strTeacherFirstname;
+        private String strTeacherLastname;
+        private String strTeacherShortname;
+
+        //Klasse
+        private String strKlasseName;
+        private String strKlasseLongname;
+
+        //Fach
+        private String[] strSubjectName;
+        private String[] strSubjectLongname;
+        //SubjectClass(APP Team)
+        private String strSubName;
+        private String strSubNameShort;
+        private String strRoom;
+        private String[] strTeacherName;
+        private String[] strTeacherNameShort;
+        private String[] strClass;
+        private Boolean bolTest;
+        private Boolean bolSup;
+        private Boolean bolElimination;
+
+
+
+        //Raum
+        private String room;
 
         #endregion
+
+        public Converter(Uri uriURL, String schule, String benutzer, String passwort)
+        {
+            URL = uriURL;
+            school = schule;
+            user = benutzer;
+            password = passwort;
+        }
 
         #region Methods
        
         private Subject makeSubjectObject()
         {
+            
+           Subject s = new Subject(strSubName,strSubNameShort,strRoom,strTeacherName,strTeacherNameShort,strClass,bolTest,bolSup,bolElimination);
+           
 
+
+            
+        
             return null;
         }
 
@@ -44,44 +91,47 @@ namespace AppTestSolution.otherClasses
             return null;
         }
 
+        private void setVariables()
+        {
+            Types.TimeTableElement timeTabelElement = wAPI.getTimeTableElement(intTimeTableElementId);
+            int[] intKlasseId = timeTabelElement.classids;
+            int[] intSubjectId = timeTabelElement.subjectids;
+            int[] intRoomId = timeTabelElement.roomids;
+           
+            //foreach (int i in intKlasseId)
+            //{
+            //    Types.Klasse klasse = wAPI.getKlasse(intKlasseId[i]); <-- Methode gibt noch nicht!
+            //    strKlasseName = ...
+            //    strKlasseLongname = ...
+            //}
+            
+            //Es werden alle Fächer des TimeTableElements in die Variablen gespeichert!
+            foreach (int i in intSubjectId)
+            {
+                Types.Subject subject = wAPI.getSubject(intSubjectId[i]);
+                strSubjectLongname[i] = subject.longname;
+                strSubjectName[i] = subject.name;
+            }
+
+            //Es werden alle Räume des TimeTableElements in die Variablen gespiechert!
+            foreach (int i in intRoomId)
+            {
+                Types.Room room = wAPI.getRoom(intRoomId[i]);
+
+                
+            }
+            
+            
+            //Types.Department department = wAPI.getDepartment(intDepartmentId);
+            //Types.Holiday holiday = wAPI.getHoliday(intHolidayId);
+            //Types.Schoolyear schoolyear = wAPI.getSchoolyear(i);
+            
+            
+            
+        }
 
         #endregion
-
-
-        Object classname = testclass;
-       
-        //Teacher
-        String strFirstname;
-        String lastname;
-        String shortname;
-
-        //Klasse
-        String name;
-        String longname;
-        int did;
-
-        classname cn = new classname();
-
-        cn.getTeacher(int id)
-        {
-            firstname = cn.GetValue(firstname);
-            lastname = cn.GetValue(lastname);
-            shortname = cn.GetValue(shortname);
-        }
-        cn.getKlasse(int id){
-        name = cn.GetValue(name);
-        longname = cn.GetValue(longname);
-    
-        }
-        cn.getSubject(int id){
-        }
-        cn.getDepartment(int id){
-        }
-        cn.getHoliday(int id){
-        }
-        cn.getSchoolyear(int id){
-        }
-        cn.getTimeTableElement(int id){
-        }
+        
 
 }
+

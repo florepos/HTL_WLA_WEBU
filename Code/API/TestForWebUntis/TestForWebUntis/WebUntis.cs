@@ -26,15 +26,17 @@ using System.Diagnostics;
 
 namespace DoDownload
 {
+    //! DoDownload::RequestState
+    /*! State of the Download */
     public class RequestState
     {
         // This class stores the State of the request.
-        const int BUFFER_SIZE = 1024;
-        public StringBuilder requestData;
-        public byte[] BufferRead;
-        public HttpWebRequest request;
-        public HttpWebResponse response;
-        public Stream streamResponse;
+        const int BUFFER_SIZE = 1024;/*!< Field containing Size of the Buffer */
+        public StringBuilder requestData;/*!< An Object to crate a String */
+        public byte[] BufferRead;/*!< Buffer to Download the Project */
+        public HttpWebRequest request;/*!< The Data to send to the Server */
+        public HttpWebResponse response;/*!< The Data to get from the Server */
+        public Stream streamResponse;/*!< The Stream of the Data in the Server */
         public RequestState()
         {
             BufferRead = new byte[BUFFER_SIZE];
@@ -44,13 +46,16 @@ namespace DoDownload
         }
     }
 
+    //! DoDownload::HttpWebRequest_BeginGetResponse
+    /*! Class to load  */
     class HttpWebRequest_BeginGetResponse
     {
-        public static ManualResetEvent allDone = new ManualResetEvent(false);
-        const int BUFFER_SIZE = 1024;
-        const int DefaultTimeout = 2 * 60 * 1000;
+        public static ManualResetEvent allDone = new ManualResetEvent(false);/*!< Contains the State of the Download */
+        const int BUFFER_SIZE = 1024;/*!< The Buffer Size of the DowloadBuffer */
+        const int DefaultTimeout = 2 * 60 * 1000;/*!< The timeouf when the connection fails */
 
-        // Abort the request if the timer fires.
+        //! TimeoutCallback
+        /*! Abort the request if the timer fires.*/
         private static void TimeoutCallback(object state, bool timedOut)
         {
             if (timedOut)
@@ -63,7 +68,8 @@ namespace DoDownload
             }
         }
 
-        //public static void Main()
+        //! start()
+        /*! Starts a Webrequest */
         public void start()
         {
 
@@ -71,7 +77,12 @@ namespace DoDownload
             {
                 // Create a HttpWebrequest object to the desired URL. 
                 HttpWebRequest myHttpWebRequest = (HttpWebRequest)WebRequest.Create("http://www.contoso.com");
+                
+                /*! set the HttpWebRequest variables*/
+                //myHttpWebRequest.Method = "POST";
+                //myHttpWebRequest.ContentType = "application/json";
 
+                //Stream stream = myHttpWebRequest.BeginGetRequestStream();
 
                 /**
                 * If you are behind a firewall and you do not have your browser proxy setup
@@ -126,6 +137,8 @@ namespace DoDownload
                 //System.Diagnostics.Debug.Read();
             }
         }
+        //! RespCallback
+        /*! Callbach when the Data arrives  */
         private static void RespCallback(IAsyncResult asynchronousResult)
         {
             try
@@ -151,6 +164,8 @@ namespace DoDownload
             }
             allDone.Set();
         }
+        //! ReadCallBack
+        /*! Reads and compute the Callback result */
         private static void ReadCallBack(IAsyncResult asyncResult)
         {
             try
@@ -283,6 +298,10 @@ namespace WebuntisAPI
         private String schule;/*!< Field containing School name */
         public WebUntisConnector(Uri connection, String Schule, String User, String Password)
         {
+            /* Request Timegrid
+             * Request {"id":"ID","method":"getTimegridUnits","params":{},"jsonrpc":"2.0"}
+             * {"jsonrpc":"2.0","id":"ID","result":[{"day":2,"timeUnits":[{"name":"0","startTime":755,"endTime":845},{"name":"0","startTime":845,"endTime":935},{"name":"0","startTime":950,"endTime":1040},{"name":"0","startTime":1040,"endTime":1130},{"name":"0","startTime":1130,"endTime":1220},{"name":"0","startTime":1220,"endTime":1310},{"name":"0","startTime":1310,"endTime":1400},{"name":"0","startTime":1400,"endTime":1450},{"name":"0","startTime":1500,"endTime":1550},{"name":"0","startTime":1550,"endTime":1640},{"name":"0","startTime":1640,"endTime":1730}]},{"day":3,"timeUnits":[{"name":"0","startTime":755,"endTime":845},{"name":"0","startTime":845,"endTime":935},{"name":"0","startTime":950,"endTime":1040},{"name":"0","startTime":1040,"endTime":1130},{"name":"0","startTime":1130,"endTime":1220},{"name":"0","startTime":1220,"endTime":1310},{"name":"0","startTime":1310,"endTime":1400},{"name":"0","startTime":1400,"endTime":1450},{"name":"0","startTime":1500,"endTime":1550},{"name":"0","startTime":1550,"endTime":1640},{"name":"0","startTime":1640,"endTime":1730}]},{"day":4,"timeUnits":[{"name":"0","startTime":755,"endTime":845},{"name":"0","startTime":845,"endTime":935},{"name":"0","startTime":950,"endTime":1040},{"name":"0","startTime":1040,"endTime":1130},{"name":"0","startTime":1130,"endTime":1220},{"name":"0","startTime":1220,"endTime":1310},{"name":"0","startTime":1310,"endTime":1400},{"name":"0","startTime":1400,"endTime":1450},{"name":"0","startTime":1500,"endTime":1550},{"name":"0","startTime":1550,"endTime":1640},{"name":"0","startTime":1640,"endTime":1730}]},{"day":5,"timeUnits":[{"name":"0","startTime":755,"endTime":845},{"name":"0","startTime":845,"endTime":935},{"name":"0","startTime":950,"endTime":1040},{"name":"0","startTime":1040,"endTime":1130},{"name":"0","startTime":1130,"endTime":1220},{"name":"0","startTime":1220,"endTime":1310},{"name":"0","startTime":1310,"endTime":1400},{"name":"0","startTime":1400,"endTime":1450},{"name":"0","startTime":1500,"endTime":1550},{"name":"0","startTime":1550,"endTime":1640},{"name":"0","startTime":1640,"endTime":1730}]},{"day":6,"timeUnits":[{"name":"0","startTime":755,"endTime":845},{"name":"0","startTime":845,"endTime":935},{"name":"0","startTime":950,"endTime":1040},{"name":"0","startTime":1040,"endTime":1130},{"name":"0","startTime":1130,"endTime":1220},{"name":"0","startTime":1220,"endTime":1310},{"name":"0","startTime":1310,"endTime":1400},{"name":"0","startTime":1400,"endTime":1450},{"name":"0","startTime":1500,"endTime":1550},{"name":"0","startTime":1550,"endTime":1640},{"name":"0","startTime":1640,"endTime":1730}]},{"day":7,"timeUnits":[{"name":"0","startTime":755,"endTime":845},{"name":"0","startTime":845,"endTime":935},{"name":"0","startTime":950,"endTime":1040},{"name":"0","startTime":1040,"endTime":1130},{"name":"0","startTime":1130,"endTime":1220}]}]}
+             * /
             //{"id":"ID","method":"authenticate","params":{"user":"ANDROID","password":"PASSWORD", "client":"CLIENT"},"jsonrpc":"2.0"}
             this.User = User;
             this.Password = Password;
@@ -310,24 +329,34 @@ namespace WebuntisAPI
     }
     public class WebUntisAPI
     {
-        public const int KEY_TIMETABLE_Klasse = 1;
-        public const int KEY_TIMETABLE_Teacher = 2;
-        public const int KEY_TIMETABLE_Subject = 3;
-        public const int KEY_TIMETABLE_Room = 4;
-        public const int KEY_TIMETABLE_Student = 5;
-        private List<Types.Teacher> teachers;
-        private List<Types.Klasse> klassen;
-        private List<Types.Subject> subjects;
-        private List<Types.Department> departments;
-        private List<Types.Holiday> holidays;
-        private List<Types.Schoolyear> schoolyears;
-        private List<Types.TimeTableElement> timeTableElements;
+        public const int KEY_TIMETABLE_Klasse = 1;/*!< Consant lt. API of WU for TimeTable */
+        public const int KEY_TIMETABLE_Teacher = 2;/*!< Constant lt. API of WU for TimeTable */
+        public const int KEY_TIMETABLE_Subject = 3;/*!< Constant lt. API of WU for TimeTable */
+        public const int KEY_TIMETABLE_Room = 4;/*!< Constant lt. API of WU for TimeTable */
+        public const int KEY_TIMETABLE_Student = 5;/*!< Constant lt. API of WU for TimeTable */
+        private List<Types.Teacher> teachers;/*!< Buffer for Teachers */
+        private List<Types.Klasse> klassen;/*!< Buffer for Classes */
+        private List<Types.Subject> subjects;/*!< Buffer for subjects */
+        private List<Types.Department> departments;/*!< Buffer for departments - not really used */
+        private List<Types.Holiday> holidays;/*!< Buffer for Holidays */
+        private List<Types.Schoolyear> schoolyears;/*!< Buffer for schoolyears */
+        private List<Types.TimeTableElement> timeTableElements;/*!< Buffer for TimeTable Elements */
 
-        WebUntisConnector connection;
+        WebUntisConnector connection;/*!< Connection to Server*/
+
+        /*! API to APP-Team
+         * \param URL The URL of the WU Server
+         * \param Schule The Name of the School
+         * \param Benutzer The Username of the User
+         * \param Passwort The Password of the User
+         */
         public WebUntisAPI(Uri URL, String Schule, String Benutzer, String Passwort)
         {
             connection = new WebUntisConnector(URL, Schule, Benutzer, Passwort);
         }
+        //* loadTeacherList
+        /*! Loads teachers from JSON String to Buffer
+         * \param data JSON String of Web Request */
         private void loadTeacherList(String data)
         {
             //data = "[{\"id\":1,\"name\":\"Bach\",\"foreName\":\"Ingeborg\",\"longName\":\"Bachmann\",\"foreColor\":\"000000\",\"backColor\":\"000000\"},{\"id\":2,\"name\":\"Foss\",\"foreName\":\"Dian\",\"longName\":\"Fossey\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
@@ -361,7 +390,10 @@ namespace WebuntisAPI
                 teachers.Add(newteacher);
             }
         }
-
+        //! Get Teachers
+        /*!
+         * \param id The ID of the Teacher
+         */
         public Types.Teacher getTeacher(int id)
         {
             loadTeacherList("");
@@ -374,9 +406,60 @@ namespace WebuntisAPI
             }
             return new Types.Teacher();
         }
-        List<Types.Teacher> getTeachers()
+        public List<Types.Teacher> getTeachers()
         {
             return teachers;
+        }
+
+        /*! Load classes
+         * \param data Containing JSON String
+         */
+        private void LoadKlassenList(string data)
+        {
+            //data = "[{\"id\":71,\"name\":\"1A\",\"longName\":\"Klasse1A\",\"foreColor\":\"000000\",\"backColor\":\"000000\",did:2},{\"id\":72,\"name\":\"1B\",\"longName\":\"Klasse1B\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
+            klassen = new List<Types.Klasse>();
+            data = data.Substring(2, data.Length - 4);
+            String[] klasseobjects = Regex.Split(data, "\\},\\{");
+            foreach (String klassestring in klasseobjects)
+            {
+                String[] namevalues = klassestring.Split(',');
+                Types.Klasse newklasse = new Types.Klasse();
+                foreach (String namevalue in namevalues)
+                {
+                    String[] set = namevalue.Split(':');
+                    if (set[0] == "\"id\"")
+                    {
+                        newklasse.id = Convert.ToInt32(set[1]);
+                    }
+                    else if (set[0] == "\"name\"")
+                    {
+                        newklasse.name = set[1].Substring(1, set[1].Length - 2);
+                    }
+                    else if (set[0] == "\"longName\"")
+                    {
+                        newklasse.longname = set[1].Substring(1, set[1].Length - 2);
+                    }
+                }
+                klassen.Add(newklasse);
+            }
+        }
+        /*! getKlasse*/
+        public Types.Klasse getKlasse(int id)
+        {
+            LoadKlassenList("");
+            foreach (Types.Klasse klasse in klassen)
+            {
+                if (klasse.id == id)
+                {
+                    return klasse;
+                }
+            }
+            return new Types.Klasse();
+        }
+        /*! getKlassen*/
+        public List<Types.Klasse> getKlassen()
+        {
+            return klassen;
         }
 		
 		private void loadSubjectList(String data)
@@ -410,6 +493,9 @@ namespace WebuntisAPI
                 subjects.Add( newsubject);
              }
         }
+        //! getSubject
+        /*! 
+         * \param id Id of the Subject element */
         public Types.Subject getSubject(int id)
         {
             loadSubjectList("");
@@ -422,11 +508,19 @@ namespace WebuntisAPI
             }
             return new Types.Subject();
         }
-        List<Types.Subject> getSubjects()
+        //! getSubjects()
+        /*!
+         * Get the Complete Buffer of subjects
+         */
+        public List<Types.Subject> getSubjects()
         {
             return subjects;
         }
-
+        //! loadDepartmentList
+        /*!
+         * loads the JSON string into the buffer
+         * \param data JSON String
+         */
         private void loadDepartmentList(String data)
         {
             //data = "[{\"id\":1,\"name\":\"A1\",\"longName\":\"AAA1\"},{\"id\":2,\"name\":\"A2\",\"longName\":\"AAA2\"}]";
@@ -459,6 +553,11 @@ namespace WebuntisAPI
              }
 
         }
+        //! getDepartment
+        /*!
+         * Get the department by id
+         * \param id Id of department to search
+         */
         public Types.Department getDepartment(int id)
         {
             loadDepartmentList("");
@@ -471,11 +570,15 @@ namespace WebuntisAPI
             }
             return new Types.Department();
         }
-        List<Types.Department> getDepartments()
+        public List<Types.Department> getDepartments()
         {
             return departments;
         }
-
+        //! loadHolidayList
+        /*!
+         * Loads data into buffer
+         * \param data contains the JSon String
+         */
         private void loadHolidayList(String data)
         {
             //data = "[{\"id\":1,\"name\":\"Natio\",\"longName\":\"Nationalfeiertag\",\"startDate\":20101026,\"endDate\":20101026},{\"id\":2,\"name\":\"Allerheiligen\",\"longName\":\"Allerheiligen\",\"startDate\":20101101,\"endDate\":20101101}]";
@@ -515,6 +618,10 @@ namespace WebuntisAPI
                 holidays.Add( newHoliday);
              }
         }
+        //! getHoliday
+        /*! Search for Holyday
+         * \param id id of holiday
+         */
         public Types.Holiday getHoliday(int id)
         {
             loadHolidayList("");
@@ -527,11 +634,14 @@ namespace WebuntisAPI
             }
             return new Types.Holiday();
         }
-        List<Types.Holiday> getHolidays()
+        public List<Types.Holiday> getHolidays()
         {
             return holidays;
         }
-
+        //! loadSchoolyearList
+        /*! loads Schoolyears into buffer
+         * \param data contains JSON string for Schoolyears
+         */
         private void loadSchoolyearList(String data)
         {
             //data = "[{\"id\":10,\"name\":\"2010/2011\",\"startDate\":20100830,\"endDate\":20110731},{\"id\":11,\"name\":\"2011/2012\",\"startDate\":20110905,\"endDate\":20120729}]";
@@ -567,6 +677,10 @@ namespace WebuntisAPI
                 schoolyears.Add(newSchoolyear);
             }
         }
+        //! getSchoolyear
+        /*! getSchoolyear gets the schoolyear
+         * \param id is the id of the schoolyear
+         */
         public Types.Schoolyear getSchoolyear(int id)
         {
             loadSchoolyearList("");
@@ -579,11 +693,17 @@ namespace WebuntisAPI
             }
             return new Types.Schoolyear();
         }
-        List<Types.Schoolyear> getSchoolyears()
+        //! getSchoolyears
+        /*! get all Schoolyears */
+        public List<Types.Schoolyear> getSchoolyears()
         {
             return schoolyears;
         }
 
+        //! load loadTimeTableElementList
+        /*! Loads the Timetable elements list
+         * \params data is a JSON String containing the data from Request
+         */
         private void loadTimeTableElementList(String data)
         {
             //data = "[{\"id\":125043,\"date\":20110117,\"startTime\":800,\"endTime\":850,\"kl\":[{\"id\":71,\"id\":5}],\"te\":[{\"id\":23}],\"su\":[{\"id\":13}],\"ro\":[{\"id\":1}]},{\"id\":125127,\"date\":20120117,\"startTime\":1055,\"endTime\":1145,\"kl\":[{\"id\":22}],\"te\":[{\"id\":41}],\"su\":[{\"id\":19}],\"ro\":[{\"id\":31}]}]";
@@ -687,7 +807,8 @@ namespace WebuntisAPI
             public int[] id;
             public int s;
         }
-
+        //! getTimeTableId
+        /*! */
         private TimeTableId getTimeTableId(String idString, int s, String data, char[] dataCharArr)
         {
             int start = 0;
@@ -766,7 +887,8 @@ namespace WebuntisAPI
             timeTableId.s = s;
             return timeTableId;
         }
-
+        //! WebuntisAPI::getTimeTableElement
+        /*! Get The Timetable Element from Buffer */
         public Types.TimeTableElement getTimeTableElement(int id)
         {
             loadTimeTableElementList("");
@@ -779,23 +901,30 @@ namespace WebuntisAPI
             }
             return new Types.TimeTableElement();
         }
-        List<Types.TimeTableElement> getTimeTableElements()
+        //! getTimeTableElements
+        /*! get all Timetable Elements */
+        public List<Types.TimeTableElement> getTimeTableElements()
         {
             return timeTableElements;
         }
     }
 }
+//! Download
+/*! Contains Funcions to Download */
 namespace Download
 {
+    //! Download::RequestState
+    /*! Holds The State of the Dowload */
     public class RequestState
     {
         // This class stores the State of the request.
-        const int BUFFER_SIZE = 1024;
-        public StringBuilder requestData;
-        public byte[] BufferRead;
-        public HttpWebRequest request;
-        public HttpWebResponse response;
-        public Stream streamResponse;
+        const int BUFFER_SIZE = 1024;/*!< Buffer variable for 1024 bytes (in utf8 it ist 1024 chars) */
+        public StringBuilder requestData;/*!< Builds a String like java string builder class */
+        public byte[] BufferRead;/*!< This is the Download Buffer itself */
+        public HttpWebRequest request;/*!< Object for the Request */
+        public HttpWebResponse response;/*!< Here is the Answer */
+        public Stream streamResponse;/*!< Response Stream */
+        //! Initialisise Object
         public RequestState()
         {
             BufferRead = new byte[BUFFER_SIZE];
@@ -807,11 +936,13 @@ namespace Download
 
     class HttpWebRequest_BeginGetResponse
     {
-        public static ManualResetEvent allDone = new ManualResetEvent(false);
-        const int BUFFER_SIZE = 1024;
-        const int DefaultTimeout = 2 * 60 * 1000;
+        public static ManualResetEvent allDone = new ManualResetEvent(false); /*!< Information if done */
+        const int BUFFER_SIZE = 1024;/*!< Buffer Size with 1024 chars */
+        const int DefaultTimeout = 2 * 60 * 1000;/*!< Timeout after 2 minutes. */
 
         // Abort the request if the timer fires.
+        //! HttpWebRequest_BeginGetResponse::TimeoutCallback
+        /*! Stop loading after Timeout */
         private static void TimeoutCallback(object state, bool timedOut)
         {
             if (timedOut)
@@ -823,7 +954,7 @@ namespace Download
                 }
             }
         }
-
+        //! 
         void FakeMain()
         {
             try
@@ -883,6 +1014,8 @@ namespace Download
                 Console.Read();*/
             }
         }
+        //! WebuntisAPI::HttpWebRequest_BeginGetResponse.RespCallback
+        /*! Working with the Result of the Request - Callback function */
         private static void RespCallback(IAsyncResult asynchronousResult)
         {
             try
