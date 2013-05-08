@@ -411,9 +411,11 @@ namespace WebuntisAPI
             return teachers;
         }
 
-        /*!
+        /*! Load classes
          * \param data Containing JSON String
          */
+        private void LoadKlassenList(string data)
+        {
             //data = "[{\"id\":71,\"name\":\"1A\",\"longName\":\"Klasse1A\",\"foreColor\":\"000000\",\"backColor\":\"000000\",did:2},{\"id\":72,\"name\":\"1B\",\"longName\":\"Klasse1B\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
             klassen = new List<Types.Klasse>();
             data = data.Substring(2, data.Length - 4);
@@ -444,7 +446,7 @@ namespace WebuntisAPI
         /*! getKlasse*/
         public Types.Klasse getKlasse(int id)
         {
-            loadKlassenList("");
+            LoadKlassenList("");
             foreach (Types.Klasse klasse in klassen)
             {
                 if (klasse.id == id)
@@ -510,6 +512,7 @@ namespace WebuntisAPI
         /*!
          * Get the Complete Buffer of subjects
          */
+        public List<Types.Subject> getSubjects()
         {
             return subjects;
         }
@@ -692,6 +695,7 @@ namespace WebuntisAPI
         }
         //! getSchoolyears
         /*! get all Schoolyears */
+        public List<Types.Schoolyear> getSchoolyears()
         {
             return schoolyears;
         }
