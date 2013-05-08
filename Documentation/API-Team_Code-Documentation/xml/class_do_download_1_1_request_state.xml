@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_do_download_1_1_request_state" kind="class" prot="public">
+    <compoundname>DoDownload::RequestState</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_do_download_1_1_request_state_1adf3a556619b6cf19d040471114498689" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int DoDownload.RequestState.BUFFER_SIZE</definition>
+        <argsstring></argsstring>
+        <name>BUFFER_SIZE</name>
+        <initializer>= 1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Field containing Size of the Buffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="34" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_do_download_1_1_request_state_1af0c123367214a73fda316c1e53f35c9b" prot="public" static="no" mutable="no">
+        <type>StringBuilder</type>
+        <definition>StringBuilder DoDownload.RequestState.requestData</definition>
+        <argsstring></argsstring>
+        <name>requestData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An Object to crate a String </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="35" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_do_download_1_1_request_state_1aca28c955c588bc3d14b930bd281a7eb8" prot="public" static="no" mutable="no">
+        <type>byte[]</type>
+        <definition>byte [] DoDownload.RequestState.BufferRead</definition>
+        <argsstring></argsstring>
+        <name>BufferRead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer to <ref refid="namespace_download" kindref="compound">Download</ref> the Project </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="36" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_do_download_1_1_request_state_1a407f724ed70036cffecc6d595e70b3eb" prot="public" static="no" mutable="no">
+        <type>HttpWebRequest</type>
+        <definition>HttpWebRequest DoDownload.RequestState.request</definition>
+        <argsstring></argsstring>
+        <name>request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Data to send to the Server </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="37" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_do_download_1_1_request_state_1a92511d66202e453392c09341c2f5a3c6" prot="public" static="no" mutable="no">
+        <type>HttpWebResponse</type>
+        <definition>HttpWebResponse DoDownload.RequestState.response</definition>
+        <argsstring></argsstring>
+        <name>response</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Data to get from the Server </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="38" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_do_download_1_1_request_state_1acd2b043e223ba326627ebdc03eba740b" prot="public" static="no" mutable="no">
+        <type>Stream</type>
+        <definition>Stream DoDownload.RequestState.streamResponse</definition>
+        <argsstring></argsstring>
+        <name>streamResponse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Stream of the Data in the Server </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="39" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_do_download_1_1_request_state_1a4fe4f12efde840d5f99cfa43432984b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DoDownload.RequestState.RequestState</definition>
+        <argsstring>()</argsstring>
+        <name>RequestState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="41" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="40" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_do_download_1_1_request_state" kindref="compound">DoDownload::RequestState</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>State of the <ref refid="namespace_download" kindref="compound">Download</ref> </para>    </detaileddescription>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="32" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="31" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_do_download_1_1_request_state_1adf3a556619b6cf19d040471114498689" prot="private" virt="non-virtual"><scope>DoDownload::RequestState</scope><name>BUFFER_SIZE</name></member>
+      <member refid="class_do_download_1_1_request_state_1aca28c955c588bc3d14b930bd281a7eb8" prot="public" virt="non-virtual"><scope>DoDownload::RequestState</scope><name>BufferRead</name></member>
+      <member refid="class_do_download_1_1_request_state_1a407f724ed70036cffecc6d595e70b3eb" prot="public" virt="non-virtual"><scope>DoDownload::RequestState</scope><name>request</name></member>
+      <member refid="class_do_download_1_1_request_state_1af0c123367214a73fda316c1e53f35c9b" prot="public" virt="non-virtual"><scope>DoDownload::RequestState</scope><name>requestData</name></member>
+      <member refid="class_do_download_1_1_request_state_1a4fe4f12efde840d5f99cfa43432984b0" prot="public" virt="non-virtual"><scope>DoDownload::RequestState</scope><name>RequestState</name></member>
+      <member refid="class_do_download_1_1_request_state_1a92511d66202e453392c09341c2f5a3c6" prot="public" virt="non-virtual"><scope>DoDownload::RequestState</scope><name>response</name></member>
+      <member refid="class_do_download_1_1_request_state_1acd2b043e223ba326627ebdc03eba740b" prot="public" virt="non-virtual"><scope>DoDownload::RequestState</scope><name>streamResponse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

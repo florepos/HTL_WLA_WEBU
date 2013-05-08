@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">TestForWebUntis</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">===============</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">Main<sp/>project<sp/>directory<sp/>of<sp/>the<sp/>API<sp/>Team</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">Open<sp/>the<sp/>sln<sp/>file<sp/>to<sp/>use<sp/>the<sp/>project.</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">*<sp/>Project<sp/>type<sp/>C#</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">*<sp/>WP7<sp/>SDK<sp/>2010<sp/>Project</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/README.md"/>
+  </compounddef>
+</doxygen>

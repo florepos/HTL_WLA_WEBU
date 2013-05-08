@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_do_download_1_1_http_web_request___begin_get_response" kind="class" prot="public">
+    <compoundname>DoDownload::HttpWebRequest_BeginGetResponse</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_do_download_1_1_http_web_request___begin_get_response_1a03670e4a51868848ede5ca7c7382066a" prot="public" static="yes" mutable="no">
+        <type>ManualResetEvent</type>
+        <definition>ManualResetEvent DoDownload.HttpWebRequest_BeginGetResponse.allDone</definition>
+        <argsstring></argsstring>
+        <name>allDone</name>
+        <initializer>= new ManualResetEvent(false)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Contains the State of the <ref refid="namespace_download" kindref="compound">Download</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="53" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_do_download_1_1_http_web_request___begin_get_response_1a65d4e57e837aa57ccc2a22010d44feb6" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int DoDownload.HttpWebRequest_BeginGetResponse.BUFFER_SIZE</definition>
+        <argsstring></argsstring>
+        <name>BUFFER_SIZE</name>
+        <initializer>= 1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Buffer Size of the DowloadBuffer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="54" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_do_download_1_1_http_web_request___begin_get_response_1adbe3c5f81f16c4ee71252bdd06cb680e" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int DoDownload.HttpWebRequest_BeginGetResponse.DefaultTimeout</definition>
+        <argsstring></argsstring>
+        <name>DefaultTimeout</name>
+        <initializer>= 2 * 60 * 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The timeouf when the connection fails </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="55" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_do_download_1_1_http_web_request___begin_get_response_1a3396abd2b7664d492af50b64a198a7b8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void DoDownload.HttpWebRequest_BeginGetResponse.TimeoutCallback</definition>
+        <argsstring>(object state, bool timedOut)</argsstring>
+        <name>TimeoutCallback</name>
+        <param>
+          <type>object</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>timedOut</declname>
+        </param>
+        <briefdescription>
+<para>TimeoutCallback. </para>        </briefdescription>
+        <detaileddescription>
+<para>Abort the request if the timer fires. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="60" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="59" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_do_download_1_1_http_web_request___begin_get_response_1a08c76badb4f939d93a79740e54660178" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void DoDownload.HttpWebRequest_BeginGetResponse.RespCallback</definition>
+        <argsstring>(IAsyncResult asynchronousResult)</argsstring>
+        <name>RespCallback</name>
+        <param>
+          <type>IAsyncResult</type>
+          <declname>asynchronousResult</declname>
+        </param>
+        <briefdescription>
+<para>RespCallback. </para>        </briefdescription>
+        <detaileddescription>
+<para>Callbach when the Data arrives </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="143" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="142" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_do_download_1_1_http_web_request___begin_get_response_1a5447af55fa992d41526b6521761d4a4b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void DoDownload.HttpWebRequest_BeginGetResponse.ReadCallBack</definition>
+        <argsstring>(IAsyncResult asyncResult)</argsstring>
+        <name>ReadCallBack</name>
+        <param>
+          <type>IAsyncResult</type>
+          <declname>asyncResult</declname>
+        </param>
+        <briefdescription>
+<para>ReadCallBack. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reads and compute the Callback result </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="170" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="169" bodyend="210"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_do_download_1_1_http_web_request___begin_get_response_1a606b2dabbf563182262cb028cd32c62b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DoDownload.HttpWebRequest_BeginGetResponse.start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+<para><ref refid="class_do_download_1_1_http_web_request___begin_get_response_1a606b2dabbf563182262cb028cd32c62b" kindref="member">start()</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para>Starts a Webrequest </para>        </detaileddescription>
+        <inbodydescription>
+<para>set the HttpWebRequest variables</para><para><verbatim>              If you are behind a firewall and you do not have your browser proxy setup
+              you need to use the following proxy creation code.
+</verbatim></para><para>Create a proxy object. WebProxy myProxy = new WebProxy();</para><para>Associate a new Uri object to the _wProxy object, using the proxy address selected by the user. myProxy.Address = new Uri(&quot;http://myproxy&quot;);</para><para>Finally, initialize the Web request object proxy property with the _wProxy object. myHttpWebRequest.Proxy=myProxy;</para>        </inbodydescription>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="74" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="73" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_do_download_1_1_http_web_request___begin_get_response" kindref="compound">DoDownload::HttpWebRequest_BeginGetResponse</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Class to load </para>    </detaileddescription>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="52" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="51" bodyend="214"/>
+    <listofallmembers>
+      <member refid="class_do_download_1_1_http_web_request___begin_get_response_1a03670e4a51868848ede5ca7c7382066a" prot="public" virt="non-virtual"><scope>DoDownload::HttpWebRequest_BeginGetResponse</scope><name>allDone</name></member>
+      <member refid="class_do_download_1_1_http_web_request___begin_get_response_1a65d4e57e837aa57ccc2a22010d44feb6" prot="private" virt="non-virtual"><scope>DoDownload::HttpWebRequest_BeginGetResponse</scope><name>BUFFER_SIZE</name></member>
+      <member refid="class_do_download_1_1_http_web_request___begin_get_response_1adbe3c5f81f16c4ee71252bdd06cb680e" prot="private" virt="non-virtual"><scope>DoDownload::HttpWebRequest_BeginGetResponse</scope><name>DefaultTimeout</name></member>
+      <member refid="class_do_download_1_1_http_web_request___begin_get_response_1a5447af55fa992d41526b6521761d4a4b" prot="private" virt="non-virtual"><scope>DoDownload::HttpWebRequest_BeginGetResponse</scope><name>ReadCallBack</name></member>
+      <member refid="class_do_download_1_1_http_web_request___begin_get_response_1a08c76badb4f939d93a79740e54660178" prot="private" virt="non-virtual"><scope>DoDownload::HttpWebRequest_BeginGetResponse</scope><name>RespCallback</name></member>
+      <member refid="class_do_download_1_1_http_web_request___begin_get_response_1a606b2dabbf563182262cb028cd32c62b" prot="public" virt="non-virtual"><scope>DoDownload::HttpWebRequest_BeginGetResponse</scope><name>start</name></member>
+      <member refid="class_do_download_1_1_http_web_request___begin_get_response_1a3396abd2b7664d492af50b64a198a7b8" prot="private" virt="non-virtual"><scope>DoDownload::HttpWebRequest_BeginGetResponse</scope><name>TimeoutCallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

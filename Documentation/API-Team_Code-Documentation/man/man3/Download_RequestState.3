@@ -1,0 +1,59 @@
+.TH "Download.RequestState" 3 "Mit Mai 8 2013" "WU-APP_API" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Download.RequestState \- 
+.PP
+\fBDownload::RequestState\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Öffentliche Methoden"
+
+.in +1c
+.ti -1c
+.RI "\fBRequestState\fP ()"
+.br
+.RI "\fIInitialisise Object\&. \fP"
+.in -1c
+.SS "Öffentliche Attribute"
+
+.in +1c
+.ti -1c
+.RI "StringBuilder \fBrequestData\fP"
+.br
+.ti -1c
+.RI "byte[] \fBBufferRead\fP"
+.br
+.ti -1c
+.RI "HttpWebRequest \fBrequest\fP"
+.br
+.ti -1c
+.RI "HttpWebResponse \fBresponse\fP"
+.br
+.ti -1c
+.RI "Stream \fBstreamResponse\fP"
+.br
+.in -1c
+.SH "Ausführliche Beschreibung"
+.PP 
+\fBDownload::RequestState\fP\&. 
+
+Holds The State of the Dowload 
+.SH "Dokumentation der Datenelemente"
+.PP 
+.SS "byte [] Download\&.RequestState\&.BufferRead"
+This is the \fBDownload\fP Buffer itself 
+.SS "HttpWebRequest Download\&.RequestState\&.request"
+Object for the Request 
+.SS "StringBuilder Download\&.RequestState\&.requestData"
+Builds a String like java string builder class 
+.SS "HttpWebResponse Download\&.RequestState\&.response"
+Here is the Answer 
+.SS "Stream Download\&.RequestState\&.streamResponse"
+Response Stream 
+
+.SH "Autor"
+.PP 
+Automatisch erzeugt von Doxygen für WU-APP_API aus dem Quellcode\&.

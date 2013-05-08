@@ -337,6 +337,7 @@ namespace WebuntisAPI
     }
     public class WebUntisAPI
     {
+<<<<<<< HEAD
         public const int KEY_TIMETABLE_Klasse = 1;
         public const int KEY_TIMETABLE_Teacher = 2;
         public const int KEY_TIMETABLE_Subject = 3;
@@ -352,10 +353,36 @@ namespace WebuntisAPI
         private List<Types.Room> rooms;
 
         WebUntisConnector connection;
+=======
+        public const int KEY_TIMETABLE_Klasse = 1;/*!< Consant lt. API of WU for TimeTable */
+        public const int KEY_TIMETABLE_Teacher = 2;/*!< Constant lt. API of WU for TimeTable */
+        public const int KEY_TIMETABLE_Subject = 3;/*!< Constant lt. API of WU for TimeTable */
+        public const int KEY_TIMETABLE_Room = 4;/*!< Constant lt. API of WU for TimeTable */
+        public const int KEY_TIMETABLE_Student = 5;/*!< Constant lt. API of WU for TimeTable */
+        private List<Types.Teacher> teachers;/*!< Buffer for Teachers */
+        private List<Types.Klasse> klassen;/*!< Buffer for Classes */
+        private List<Types.Subject> subjects;/*!< Buffer for subjects */
+        private List<Types.Department> departments;/*!< Buffer for departments - not really used */
+        private List<Types.Holiday> holidays;/*!< Buffer for Holidays */
+        private List<Types.Schoolyear> schoolyears;/*!< Buffer for schoolyears */
+        private List<Types.TimeTableElement> timeTableElements;/*!< Buffer for TimeTable Elements */
+
+        WebUntisConnector connection;/*!< Connection to Server*/
+
+        /*! API to APP-Team
+         * \param URL The URL of the WU Server
+         * \param Schule The Name of the School
+         * \param Benutzer The Username of the User
+         * \param Passwort The Password of the User
+         */
+>>>>>>> 9e43352e23857668af20c7e86f3e42985ba0e249
         public WebUntisAPI(Uri URL, String Schule, String Benutzer, String Passwort)
         {
             connection = new WebUntisConnector(URL, Schule, Benutzer, Passwort);
         }
+        //* loadTeacherList
+        /*! Loads teachers from JSON String to Buffer
+         * \param data JSON String of Web Request */
         private void loadTeacherList(String data)
         {
             //data = "[{\"id\":1,\"name\":\"Bach\",\"foreName\":\"Ingeborg\",\"longName\":\"Bachmann\",\"foreColor\":\"000000\",\"backColor\":\"000000\"},{\"id\":2,\"name\":\"Foss\",\"foreName\":\"Dian\",\"longName\":\"Fossey\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
@@ -389,7 +416,10 @@ namespace WebuntisAPI
                 teachers.Add(newteacher);
             }
         }
-
+        //! Get Teachers
+        /*!
+         * \param id The ID of the Teacher
+         */
         public Types.Teacher getTeacher(int id)
         {
             loadTeacherList("");
@@ -407,8 +437,10 @@ namespace WebuntisAPI
             return teachers;
         }
 
-        /*! loadKlassenList*/
-        private void loadKlassenList(String data)
+        /*! Load classes
+         * \param data Containing JSON String
+         */
+        private void LoadKlassenList(string data)
         {
             //data = "[{\"id\":71,\"name\":\"1A\",\"longName\":\"Klasse1A\",\"foreColor\":\"000000\",\"backColor\":\"000000\",did:2},{\"id\":72,\"name\":\"1B\",\"longName\":\"Klasse1B\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
             klassen = new List<Types.Klasse>();
@@ -444,7 +476,7 @@ namespace WebuntisAPI
         /*! getKlasse*/
         public Types.Klasse getKlasse(int id)
         {
-            loadKlassenList("");
+            LoadKlassenList("");
             foreach (Types.Klasse klasse in klassen)
             {
                 if (klasse.id == id)
@@ -492,7 +524,8 @@ namespace WebuntisAPI
              }
         }
         //! getSubject
-        /*!  */
+        /*! 
+         * \param id Id of the Subject element */
         public Types.Subject getSubject(int id)
         {
             loadSubjectList("");
@@ -505,11 +538,19 @@ namespace WebuntisAPI
             }
             return new Types.Subject();
         }
+        //! getSubjects()
+        /*!
+         * Get the Complete Buffer of subjects
+         */
         public List<Types.Subject> getSubjects()
         {
             return subjects;
         }
-
+        //! loadDepartmentList
+        /*!
+         * loads the JSON string into the buffer
+         * \param data JSON String
+         */
         private void loadDepartmentList(String data)
         {
             //data = "[{\"id\":1,\"name\":\"A1\",\"longName\":\"AAA1\"},{\"id\":2,\"name\":\"A2\",\"longName\":\"AAA2\"}]";
@@ -542,6 +583,11 @@ namespace WebuntisAPI
              }
 
         }
+        //! getDepartment
+        /*!
+         * Get the department by id
+         * \param id Id of department to search
+         */
         public Types.Department getDepartment(int id)
         {
             loadDepartmentList("");
@@ -558,7 +604,11 @@ namespace WebuntisAPI
         {
             return departments;
         }
-
+        //! loadHolidayList
+        /*!
+         * Loads data into buffer
+         * \param data contains the JSon String
+         */
         private void loadHolidayList(String data)
         {
             //data = "[{\"id\":1,\"name\":\"Natio\",\"longName\":\"Nationalfeiertag\",\"startDate\":20101026,\"endDate\":20101026},{\"id\":2,\"name\":\"Allerheiligen\",\"longName\":\"Allerheiligen\",\"startDate\":20101101,\"endDate\":20101101}]";
@@ -598,6 +648,10 @@ namespace WebuntisAPI
                 holidays.Add( newHoliday);
              }
         }
+        //! getHoliday
+        /*! Search for Holyday
+         * \param id id of holiday
+         */
         public Types.Holiday getHoliday(int id)
         {
             loadHolidayList("");
@@ -614,7 +668,10 @@ namespace WebuntisAPI
         {
             return holidays;
         }
-
+        //! loadSchoolyearList
+        /*! loads Schoolyears into buffer
+         * \param data contains JSON string for Schoolyears
+         */
         private void loadSchoolyearList(String data)
         {
             //data = "[{\"id\":10,\"name\":\"2010/2011\",\"startDate\":20100830,\"endDate\":20110731},{\"id\":11,\"name\":\"2011/2012\",\"startDate\":20110905,\"endDate\":20120729}]";
@@ -650,6 +707,10 @@ namespace WebuntisAPI
                 schoolyears.Add(newSchoolyear);
             }
         }
+        //! getSchoolyear
+        /*! getSchoolyear gets the schoolyear
+         * \param id is the id of the schoolyear
+         */
         public Types.Schoolyear getSchoolyear(int id)
         {
             loadSchoolyearList("");
@@ -662,11 +723,17 @@ namespace WebuntisAPI
             }
             return new Types.Schoolyear();
         }
+        //! getSchoolyears
+        /*! get all Schoolyears */
         public List<Types.Schoolyear> getSchoolyears()
         {
             return schoolyears;
         }
 
+        //! load loadTimeTableElementList
+        /*! Loads the Timetable elements list
+         * \params data is a JSON String containing the data from Request
+         */
         private void loadTimeTableElementList(String data)
         {
             //data = "[{\"id\":125043,\"date\":20110117,\"startTime\":800,\"endTime\":850,\"kl\":[{\"id\":71,\"id\":5}],\"te\":[{\"id\":23}],\"su\":[{\"id\":13}],\"ro\":[{\"id\":1}]},{\"id\":125127,\"date\":20120117,\"startTime\":1055,\"endTime\":1145,\"kl\":[{\"id\":22}],\"te\":[{\"id\":41}],\"su\":[{\"id\":19}],\"ro\":[{\"id\":31}]}]";
@@ -770,7 +837,8 @@ namespace WebuntisAPI
             public int[] id;
             public int s;
         }
-
+        //! getTimeTableId
+        /*! */
         private TimeTableId getTimeTableId(String idString, int s, String data, char[] dataCharArr)
         {
             int start = 0;
@@ -863,6 +931,8 @@ namespace WebuntisAPI
             }
             return new Types.TimeTableElement();
         }
+        //! getTimeTableElements
+        /*! get all Timetable Elements */
         public List<Types.TimeTableElement> getTimeTableElements()
         {
             return timeTableElements;

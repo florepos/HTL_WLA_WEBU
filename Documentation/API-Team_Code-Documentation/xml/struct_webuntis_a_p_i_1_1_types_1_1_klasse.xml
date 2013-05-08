@@ -14,7 +14,7 @@
 <para>Field containing id </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="31" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="31" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="238" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="238" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_klasse_1a034b759d9d7262da6eaa0613d5f6a0e7" prot="public" static="no" mutable="no">
         <type>String</type>
@@ -27,7 +27,7 @@
 <para>Field containing short classname </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="32" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="32" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="239" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="239" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_klasse_1a0ec00ea38031e97b255fa139387142e7" prot="public" static="no" mutable="no">
         <type>String</type>
@@ -40,7 +40,7 @@
 <para>Field containing classname </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="33" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="33" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="240" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="240" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_webuntis_a_p_i_1_1_types_1_1_klasse_1a0441c438c8e4098068dadb84615d847e" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -53,14 +53,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="34" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="34" bodyend="-1"/>
+        <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="241" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="241" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para><ref refid="struct_webuntis_a_p_i_1_1_types_1_1_klasse" kindref="compound">WebuntisAPI::Types::Klasse</ref>. </para>    </briefdescription>
     <detaileddescription>
 <para>The Structure to save information about a Schoolclass in german because class makes problems </para>    </detaileddescription>
-    <location file="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" line="30" bodyfile="C:/Users/fabian.franz/Documents/Visual Studio 2012/Projects/WebuntisAPI/WebuntisAPI/WebUntis.cs" bodystart="29" bodyend="35"/>
+    <location file="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" line="237" bodyfile="C:/Users/fabian.franz/Documents/GitHub/HTL_WLA_WEBU/Code/API/TestForWebUntis/TestForWebUntis/WebUntis.cs" bodystart="236" bodyend="242"/>
     <listofallmembers>
       <member refid="struct_webuntis_a_p_i_1_1_types_1_1_klasse_1a0441c438c8e4098068dadb84615d847e" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::Klasse</scope><name>did</name></member>
       <member refid="struct_webuntis_a_p_i_1_1_types_1_1_klasse_1a0c8d6c1ce71142b67d20df2c818bbc75" prot="public" virt="non-virtual"><scope>WebuntisAPI::Types::Klasse</scope><name>id</name></member>
