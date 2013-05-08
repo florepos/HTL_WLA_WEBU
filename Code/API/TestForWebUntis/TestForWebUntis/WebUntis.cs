@@ -26,15 +26,17 @@ using System.Diagnostics;
 
 namespace DoDownload
 {
+    //! DoDownload::RequestState
+    /*! State of the Download */
     public class RequestState
     {
         // This class stores the State of the request.
-        const int BUFFER_SIZE = 1024;
-        public StringBuilder requestData;
-        public byte[] BufferRead;
-        public HttpWebRequest request;
-        public HttpWebResponse response;
-        public Stream streamResponse;
+        const int BUFFER_SIZE = 1024;/*!< Field containing Size of the Buffer */
+        public StringBuilder requestData;/*!< An Object to crate a String */
+        public byte[] BufferRead;/*!< Buffer to Download the Project */
+        public HttpWebRequest request;/*!< The Data to send to the Server */
+        public HttpWebResponse response;/*!< The Data to get from the Server */
+        public Stream streamResponse;/*!< The Stream of the Data in the Server */
         public RequestState()
         {
             BufferRead = new byte[BUFFER_SIZE];
@@ -44,13 +46,16 @@ namespace DoDownload
         }
     }
 
+    //! DoDownload::HttpWebRequest_BeginGetResponse
+    /*! Class to load  */
     class HttpWebRequest_BeginGetResponse
     {
-        public static ManualResetEvent allDone = new ManualResetEvent(false);
-        const int BUFFER_SIZE = 1024;
-        const int DefaultTimeout = 2 * 60 * 1000;
+        public static ManualResetEvent allDone = new ManualResetEvent(false);/*!< Contains the State of the Download */
+        const int BUFFER_SIZE = 1024;/*!< The Buffer Size of the DowloadBuffer */
+        const int DefaultTimeout = 2 * 60 * 1000;/*!< The timeouf when the connection fails */
 
-        // Abort the request if the timer fires.
+        //! TimeoutCallback
+        /*! Abort the request if the timer fires.*/
         private static void TimeoutCallback(object state, bool timedOut)
         {
             if (timedOut)
@@ -63,7 +68,8 @@ namespace DoDownload
             }
         }
 
-        //public static void Main()
+        //! start()
+        /*! Starts a Webrequest */
         public void start()
         {
 
@@ -126,6 +132,8 @@ namespace DoDownload
                 //System.Diagnostics.Debug.Read();
             }
         }
+        //! RespCallback
+        /*! Callbach when the Data arrives  */
         private static void RespCallback(IAsyncResult asynchronousResult)
         {
             try
@@ -151,6 +159,8 @@ namespace DoDownload
             }
             allDone.Set();
         }
+        //! ReadCallBack
+        /*! Reads and compute the Callback result */
         private static void ReadCallBack(IAsyncResult asyncResult)
         {
             try
@@ -414,6 +424,8 @@ namespace WebuntisAPI
                 subjects.Add( newsubject);
              }
         }
+        //! getSubject
+        /*!  */
         public Types.Subject getSubject(int id)
         {
             loadSubjectList("");
@@ -770,7 +782,8 @@ namespace WebuntisAPI
             timeTableId.s = s;
             return timeTableId;
         }
-
+        //! WebuntisAPI::getTimeTableElement
+        /*! Get The Timetable Element from Buffer */
         public Types.TimeTableElement getTimeTableElement(int id)
         {
             loadTimeTableElementList("");
@@ -789,17 +802,22 @@ namespace WebuntisAPI
         }
     }
 }
+//! Download
+/*! Contains Funcions to Download */
 namespace Download
 {
+    //! Download::RequestState
+    /*! Holds The State of the Dowload */
     public class RequestState
     {
         // This class stores the State of the request.
-        const int BUFFER_SIZE = 1024;
-        public StringBuilder requestData;
-        public byte[] BufferRead;
-        public HttpWebRequest request;
-        public HttpWebResponse response;
-        public Stream streamResponse;
+        const int BUFFER_SIZE = 1024;/*!< Buffer variable for 1024 bytes (in utf8 it ist 1024 chars) */
+        public StringBuilder requestData;/*!< Builds a String like java string builder class */
+        public byte[] BufferRead;/*!< This is the Download Buffer itself */
+        public HttpWebRequest request;/*!< Object for the Request */
+        public HttpWebResponse response;/*!< Here is the Answer */
+        public Stream streamResponse;/*!< Response Stream */
+        //! Initialisise Object
         public RequestState()
         {
             BufferRead = new byte[BUFFER_SIZE];
@@ -811,11 +829,13 @@ namespace Download
 
     class HttpWebRequest_BeginGetResponse
     {
-        public static ManualResetEvent allDone = new ManualResetEvent(false);
-        const int BUFFER_SIZE = 1024;
-        const int DefaultTimeout = 2 * 60 * 1000;
+        public static ManualResetEvent allDone = new ManualResetEvent(false); /*!< Information if done */
+        const int BUFFER_SIZE = 1024;/*!< Buffer Size with 1024 chars */
+        const int DefaultTimeout = 2 * 60 * 1000;/*!< Timeout after 2 minutes. */
 
         // Abort the request if the timer fires.
+        //! HttpWebRequest_BeginGetResponse::TimeoutCallback
+        /*! Stop loading after Timeout */
         private static void TimeoutCallback(object state, bool timedOut)
         {
             if (timedOut)
@@ -827,7 +847,7 @@ namespace Download
                 }
             }
         }
-
+        //! 
         void FakeMain()
         {
             try
@@ -887,6 +907,8 @@ namespace Download
                 Console.Read();*/
             }
         }
+        //! WebuntisAPI::HttpWebRequest_BeginGetResponse.RespCallback
+        /*! Working with the Result of the Request - Callback function */
         private static void RespCallback(IAsyncResult asynchronousResult)
         {
             try
