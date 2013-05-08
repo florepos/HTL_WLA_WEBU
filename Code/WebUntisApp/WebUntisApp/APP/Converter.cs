@@ -22,7 +22,7 @@ namespace AppTestSolution.otherClasses
     {
         #region Variables
 
-
+        private String strSubName;
 
         #endregion
 
@@ -30,7 +30,6 @@ namespace AppTestSolution.otherClasses
        
         private Subject makeSubjectObject()
         {
-
             return null;
         }
 
@@ -47,24 +46,24 @@ namespace AppTestSolution.otherClasses
 
         #endregion
 
-
-        Object classname = testclass;
+        Object classname = classname;
        
         //Teacher
-        String strFirstname;
-        String lastname;
-        String shortname;
+        private String strFirstname;
+        private String lastname;
+        private String shortname;
 
         //Klasse
-        String name;
-        String longname;
-        int did;
+        private String name;
+        private String longname;
+        private int did;
 
-        classname cn = new classname();
+        //für FabiansClass muss später die Klasse des API Teams eingefügt werden!!!
+        Types.Teacher teacher = WebuntisAPI.Types.
 
         cn.getTeacher(int id)
         {
-            firstname = cn.GetValue(firstname);
+            strFirstname = cn.GetValue(firstname);
             lastname = cn.GetValue(lastname);
             shortname = cn.GetValue(shortname);
         }
@@ -73,15 +72,9 @@ namespace AppTestSolution.otherClasses
         longname = cn.GetValue(longname);
     
         }
-        cn.getSubject(int id){
-        }
-        cn.getDepartment(int id){
-        }
-        cn.getHoliday(int id){
-        }
-        cn.getSchoolyear(int id){
-        }
-        cn.getTimeTableElement(int id){
-        }
+        
+        cn.getAllTeachers(){}
+        
 
 }
+
