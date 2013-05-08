@@ -41,6 +41,18 @@ namespace WebUntisAPP
         //Fach
         private String[] strSubjectName;
         private String[] strSubjectLongname;
+        //SubjectClass(APP Team)
+        private String strSubName;
+        private String strSubNameShort;
+        private String strRoom;
+        private String[] strTeacherName;
+        private String[] strTeacherNameShort;
+        private String[] strClass;
+        private Boolean bolTest;
+        private Boolean bolSup;
+        private Boolean bolElimination;
+
+
 
         //Raum
         private String room;
@@ -59,6 +71,13 @@ namespace WebUntisAPP
        
         private Subject makeSubjectObject()
         {
+            
+           Subject s = new Subject(strSubName,strSubNameShort,strRoom,strTeacherName,strTeacherNameShort,strClass,bolTest,bolSup,bolElimination);
+           
+
+
+            
+        
             return null;
         }
 
