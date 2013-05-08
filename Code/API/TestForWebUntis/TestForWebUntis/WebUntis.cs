@@ -21,6 +21,7 @@ using System.Net;
 using System.IO;
 using System.Threading;
 using System.Text.RegularExpressions;
+using System.Diagnostics;
 
 
 namespace DoDownload
@@ -315,6 +316,13 @@ namespace WebuntisAPI
         public const int KEY_TIMETABLE_Room = 4;
         public const int KEY_TIMETABLE_Student = 5;
         private List<Types.Teacher> teachers;
+        private List<Types.Klasse> klassen;
+        private List<Types.Subject> subjects;
+        private List<Types.Department> departments;
+        private List<Types.Holiday> holidays;
+        private List<Types.Schoolyear> schoolyears;
+        private List<Types.TimeTableElement> timeTableElements;
+
         WebUntisConnector connection;
         public WebUntisAPI(Uri URL, String Schule, String Benutzer, String Passwort)
         {
@@ -322,6 +330,7 @@ namespace WebuntisAPI
         }
         private void loadTeacherList(String data)
         {
+            //data = "[{\"id\":1,\"name\":\"Bach\",\"foreName\":\"Ingeborg\",\"longName\":\"Bachmann\",\"foreColor\":\"000000\",\"backColor\":\"000000\"},{\"id\":2,\"name\":\"Foss\",\"foreName\":\"Dian\",\"longName\":\"Fossey\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
             teachers = new List<Types.Teacher>();
             data = data.Substring(2, data.Length - 4);
             String[] teacherobjects = Regex.Split(data, "\\},\\{");
@@ -352,6 +361,7 @@ namespace WebuntisAPI
                 teachers.Add(newteacher);
             }
         }
+
         public Types.Teacher getTeacher(int id)
         {
             loadTeacherList("");
@@ -367,6 +377,411 @@ namespace WebuntisAPI
         List<Types.Teacher> getTeachers()
         {
             return teachers;
+        }
+		
+		private void loadSubjectList(String data)
+        {
+            //data = "[{\"id\":1,\"name\":\"RK\",\"longName\":\"Kath.Religion\",\"foreColor\":\"000000\",\"backColor\":\"000000\"},{\"id\":2,\"name\":\"RE\",\"longName\":\"Evang.Religion\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]";
+            subjects = new List<Types.Subject>();
+            data = data.Substring(2, data.Length - 4);
+            String[] subjectObject = Regex.Split(data, "\\},\\{");
+
+            foreach (String subjectString in subjectObject)
+            {
+                String[] namevalues = subjectString.Split(',');
+                Types.Subject newsubject = new Types.Subject();
+
+                foreach (String namevalue in namevalues)
+                {
+                    String[] set = namevalue.Split(':');
+                    if (set[0] == "\"id\"")
+                    {
+                        newsubject.id = Convert.ToInt32(set[1]);
+                    }
+                    else if( set[0] == "\"name\"")
+                    {
+                        newsubject.name = set[1].Substring( 1, set[1].Length-2);
+                    }
+                    else if( set[0] == "\"longName\"")
+                    {
+                        newsubject.longname = set[1].Substring( 1, set[1].Length-2);
+                    }
+                }
+                subjects.Add( newsubject);
+             }
+        }
+        public Types.Subject getSubject(int id)
+        {
+            loadSubjectList("");
+            foreach (Types.Subject subject in subjects)
+            {
+                if (subject.id == id)
+                {
+                    return subject;
+                }
+            }
+            return new Types.Subject();
+        }
+        List<Types.Subject> getSubjects()
+        {
+            return subjects;
+        }
+
+        private void loadDepartmentList(String data)
+        {
+            //data = "[{\"id\":1,\"name\":\"A1\",\"longName\":\"AAA1\"},{\"id\":2,\"name\":\"A2\",\"longName\":\"AAA2\"}]";
+            departments = new List<Types.Department>();
+            data = data.Substring(2, data.Length - 4);
+            String[] departmentObject = Regex.Split(data, "\\},\\{");
+
+            foreach (String departmentString in departmentObject)
+            {
+                String[] namevalues = departmentString.Split(',');
+                Types.Department newDepartment = new Types.Department();
+
+                foreach (String namevalue in namevalues)
+                {
+                    String[] set = namevalue.Split(':');
+                    if (set[0] == "\"id\"")
+                    {
+                        newDepartment.id = Convert.ToInt32(set[1]);
+                    }
+                    else if( set[0] == "\"name\"")
+                    {
+                        newDepartment.name = set[1].Substring( 1, set[1].Length-2);
+                    }
+                    else if( set[0] == "\"longName\"")
+                    {
+                        newDepartment.longname = set[1].Substring( 1, set[1].Length-2);
+                    }
+                }
+                departments.Add( newDepartment);
+             }
+
+        }
+        public Types.Department getDepartment(int id)
+        {
+            loadDepartmentList("");
+            foreach (Types.Department department in departments)
+            {
+                if (department.id == id)
+                {
+                    return department;
+                }
+            }
+            return new Types.Department();
+        }
+        List<Types.Department> getDepartments()
+        {
+            return departments;
+        }
+
+        private void loadHolidayList(String data)
+        {
+            //data = "[{\"id\":1,\"name\":\"Natio\",\"longName\":\"Nationalfeiertag\",\"startDate\":20101026,\"endDate\":20101026},{\"id\":2,\"name\":\"Allerheiligen\",\"longName\":\"Allerheiligen\",\"startDate\":20101101,\"endDate\":20101101}]";
+            holidays = new List<Types.Holiday>();
+            data = data.Substring(2, data.Length - 4);
+            String[] holidayObject = Regex.Split(data, "\\},\\{");
+
+            foreach (String holidayString in holidayObject)
+            {
+                String[] namevalues = holidayString.Split(',');
+                Types.Holiday newHoliday = new Types.Holiday();
+
+                foreach (String namevalue in namevalues)
+                {
+                    String[] set = namevalue.Split(':');
+                    if (set[0] == "\"id\"")
+                    {
+                        newHoliday.id = Convert.ToInt32(set[1]);
+                    }
+                    else if( set[0] == "\"name\"")
+                    {
+                        newHoliday.name = set[1].Substring( 1, set[1].Length-2);
+                    }
+                    else if( set[0] == "\"longName\"")
+                    {
+                        newHoliday.longname = set[1].Substring( 1, set[1].Length-2);
+                    }
+                    else if (set[0] == "\"startDate\"")
+                    {
+                        newHoliday.startTime = new DateTime( Convert.ToInt32(set[1].Substring(0, 4)), Convert.ToInt32( set[1].Substring(4, 2)), Convert.ToInt32( set[1].Substring(6, 2)));
+                    }
+                    else if (set[0] == "\"endDate\"")
+                    {
+                        newHoliday.endTime = new DateTime(Convert.ToInt32(set[1].Substring(0, 4)), Convert.ToInt32(set[1].Substring(4, 2)), Convert.ToInt32(set[1].Substring(6, 2)));
+                    }
+                }
+                holidays.Add( newHoliday);
+             }
+        }
+        public Types.Holiday getHoliday(int id)
+        {
+            loadHolidayList("");
+            foreach (Types.Holiday holiday in holidays)
+            {
+                if (holiday.id == id)
+                {
+                    return holiday;
+                }
+            }
+            return new Types.Holiday();
+        }
+        List<Types.Holiday> getHolidays()
+        {
+            return holidays;
+        }
+
+        private void loadSchoolyearList(String data)
+        {
+            //data = "[{\"id\":10,\"name\":\"2010/2011\",\"startDate\":20100830,\"endDate\":20110731},{\"id\":11,\"name\":\"2011/2012\",\"startDate\":20110905,\"endDate\":20120729}]";
+            schoolyears = new List<Types.Schoolyear>();
+            data = data.Substring(2, data.Length - 4);
+            String[] schoolyearObject = Regex.Split(data, "\\},\\{");
+
+            foreach (String schoolyearString in schoolyearObject)
+            {
+                String[] namevalues = schoolyearString.Split(',');
+                Types.Schoolyear newSchoolyear = new Types.Schoolyear();
+
+                foreach (String namevalue in namevalues)
+                {
+                    String[] set = namevalue.Split(':');
+                    if (set[0] == "\"id\"")
+                    {
+                        newSchoolyear.id = Convert.ToInt32(set[1]);
+                    }
+                    else if (set[0] == "\"name\"")
+                    {
+                        newSchoolyear.name = set[1].Substring(1, set[1].Length - 2);
+                    }
+                    else if (set[0] == "\"startDate\"")
+                    {
+                        newSchoolyear.startTime = new DateTime(Convert.ToInt32(set[1].Substring(0, 4)), Convert.ToInt32(set[1].Substring(4, 2)), Convert.ToInt32(set[1].Substring(6, 2)));
+                    }
+                    else if (set[0] == "\"endDate\"")
+                    {
+                        newSchoolyear.endTime = new DateTime(Convert.ToInt32(set[1].Substring(0, 4)), Convert.ToInt32(set[1].Substring(4, 2)), Convert.ToInt32(set[1].Substring(6, 2)));
+                    }
+                }
+                schoolyears.Add(newSchoolyear);
+            }
+        }
+        public Types.Schoolyear getSchoolyear(int id)
+        {
+            loadSchoolyearList("");
+            foreach (Types.Schoolyear schoolyear in schoolyears)
+            {
+                if (schoolyear.id == id)
+                {
+                    return schoolyear;
+                }
+            }
+            return new Types.Schoolyear();
+        }
+        List<Types.Schoolyear> getSchoolyears()
+        {
+            return schoolyears;
+        }
+
+        private void loadTimeTableElementList(String data)
+        {
+            //data = "[{\"id\":125043,\"date\":20110117,\"startTime\":800,\"endTime\":850,\"kl\":[{\"id\":71,\"id\":5}],\"te\":[{\"id\":23}],\"su\":[{\"id\":13}],\"ro\":[{\"id\":1}]},{\"id\":125127,\"date\":20120117,\"startTime\":1055,\"endTime\":1145,\"kl\":[{\"id\":22}],\"te\":[{\"id\":41}],\"su\":[{\"id\":19}],\"ro\":[{\"id\":31}]}]";
+            //data = "[{\"id\":125043,\"date\":20110117,\"startTime\":800,\"endTime\":850,\"kl\":[{\"id\":71}],\"te\":[{\"id\":23}],\"su\":[{\"id\":13}],\"ro\":[{\"id\":1}]}]";
+
+            timeTableElements = new List<Types.TimeTableElement>();
+            data = data.Substring(2, data.Length - 4);
+            String[] timeTableElementObject = Regex.Split(data, "\\},\\{");
+            char[] dataCharArr;
+            TimeTableId timeTableInfo;
+            
+            foreach (String timeTableElementString in timeTableElementObject)
+            {
+                String[] namevalues = timeTableElementString.Split(',');
+                Types.TimeTableElement newTimeTableElement = new Types.TimeTableElement();
+                dataCharArr = data.ToCharArray();
+
+                for( int s = 0; s < namevalues.Length; s++)
+                {
+                    String[] set = namevalues[s].Split(':');
+
+                    if (set[0] == "\"id\"")
+                    {
+                        newTimeTableElement.id = Convert.ToInt32( Regex.Replace( set[1], "}]", ""));
+                    }
+                    else if (set[0] == "\"date\"")
+                    {
+                        newTimeTableElement.date_lesson = new DateTime(Convert.ToInt32(set[1].Substring(0, 4)), Convert.ToInt32(set[1].Substring(4, 2)), Convert.ToInt32(set[1].Substring(6, 2)));
+                    }
+                    else if (set[0] == "\"startTime\"")
+                    {
+                        Int32 startHour;
+                        Int32 startMinute;
+
+                        if (set[1].Length == 3)
+                        {
+                            startHour = Convert.ToInt32( 0 + set[1].Substring( 0, 1));
+                            startMinute = Convert.ToInt32( 0 + set[1].Substring( 1, 2));
+                        }
+                        else
+                        {
+                            startHour = Convert.ToInt32( 0 + set[1].Substring( 0, 2));
+                            startMinute = Convert.ToInt32( 0 + set[1].Substring( 2, 2));
+                        }
+                        newTimeTableElement.startTime = new DateTime(newTimeTableElement.date_lesson.Year, newTimeTableElement.date_lesson.Month, newTimeTableElement.date_lesson.Day, startHour, startMinute, 0);
+                    }
+                    else if (set[0] == "\"endTime\"")
+                    {
+                        Int32 endHour;
+                        Int32 endMinute;
+
+                         if (set[1].Length == 3)
+                        {
+                            endHour = Convert.ToInt32( 0 + set[1].Substring( 0, 1));
+                            endMinute = Convert.ToInt32( 0 + set[1].Substring( 1, 2));
+                        }
+                        else
+                        {
+                            endHour = Convert.ToInt32( 0 + set[1].Substring( 0, 2));
+                            endMinute = Convert.ToInt32( 0 + set[1].Substring( 2, 2));
+                        }
+                        newTimeTableElement.endTime = new DateTime( newTimeTableElement.date_lesson.Year, newTimeTableElement.date_lesson.Month, newTimeTableElement.date_lesson.Day, endHour, endMinute, 0);
+                    }
+                    else if (set[0] == "\"kl\"")
+                    {
+                        // set klassen ids
+                        timeTableInfo = getTimeTableId("\"kl\"", s, data, dataCharArr);
+                        newTimeTableElement.classids = timeTableInfo.id;
+                        s = timeTableInfo.s;
+                    }
+                    else if (set[0] == "\"su\"")
+                    {
+                        // set subject ids
+                        timeTableInfo = getTimeTableId("\"su\"", s, data, dataCharArr);
+                        newTimeTableElement.subjectids = timeTableInfo.id;
+                        s = timeTableInfo.s;
+                    }
+                    else if (set[0] == "\"ro\"")
+                    {
+                        // set room ids
+                        timeTableInfo = getTimeTableId("\"ro\"", s, data, dataCharArr);
+                        newTimeTableElement.roomids = timeTableInfo.id;
+                        s = timeTableInfo.s;
+                    }
+                }
+
+                try
+                {
+                    data = data.Remove(0, timeTableElementString.Length + 4);
+                }
+                catch (ArgumentOutOfRangeException)
+                {
+                }
+
+                timeTableElements.Add( newTimeTableElement);
+            }
+        }
+
+        private struct TimeTableId
+        {
+            public int[] id;
+            public int s;
+        }
+
+        private TimeTableId getTimeTableId(String idString, int s, String data, char[] dataCharArr)
+        {
+            int start = 0;
+            int i = 0;
+            int countOpen = 1;
+            int countObjects = 1;
+            int countQuote = 0;
+            int n = 0;
+            String data1;
+            String[] klasseIdObject;
+
+            TimeTableId timeTableId = new TimeTableId();
+
+            start = data.IndexOf( idString + ":[{");//"\"kl\":[{"
+            countObjects = 0;
+
+            if (start != -1)
+            {
+                countOpen = 0;
+                            
+                for (i = start++; i < dataCharArr.Length; i++)
+                {
+                    if ((dataCharArr[i] == '\"') && (countQuote == 0))
+                    {
+                        countObjects++;
+                        countQuote++;
+                    }
+                    else if ((dataCharArr[i] == '\"') && (countQuote > 0))
+                    {
+                        countQuote--;
+                    }
+                    else if (dataCharArr[i] == '{')
+                    {
+                        countOpen++;
+                    }
+                    else if (dataCharArr[i] == '}')
+                    {
+                        countOpen--;
+                        if (countOpen == 0)
+                            break;
+                    }
+                }
+            }
+            if ( start == -1)
+            {
+                timeTableId.id = new int[1];
+            }
+            else
+            {
+                data1 = data.Substring(start + 2, i - start);
+
+                data1 = data1.Remove(data1.IndexOf(']')-1);//+1
+                klasseIdObject = Regex.Split(data1, "\\}\\,\\{");
+                timeTableId.id = new int[countObjects-1];
+
+                String[] klasseIdNameValues = klasseIdObject[0].Split(',');
+                n = 0;
+
+                foreach (String klasseIdString in klasseIdNameValues)
+                {
+                    if (n > 0)
+                        s++;
+
+                    String[] setKlassenId = klasseIdString.Split(':');
+                    try
+                    {
+                        timeTableId.id[n] = Convert.ToInt32(setKlassenId[1]);
+                    }
+                    catch( Exception)
+                    {
+                        timeTableId.id[n] = Convert.ToInt32(setKlassenId[2]);
+                    }
+                    n++;
+                }
+            }
+            timeTableId.s = s;
+            return timeTableId;
+        }
+
+        public Types.TimeTableElement getTimeTableElement(int id)
+        {
+            loadTimeTableElementList("");
+            foreach (Types.TimeTableElement timeTableElement in timeTableElements)
+            {
+                if (timeTableElement.id == id)
+                {
+                    return timeTableElement;
+                }
+            }
+            return new Types.TimeTableElement();
+        }
+        List<Types.TimeTableElement> getTimeTableElements()
+        {
+            return timeTableElements;
         }
     }
 }
