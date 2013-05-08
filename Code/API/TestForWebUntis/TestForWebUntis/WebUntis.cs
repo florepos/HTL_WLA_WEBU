@@ -869,7 +869,7 @@ namespace WebuntisAPI
         }
         private void loadRoomList(String data)
         {
-            data = "[{\"id\":1,\"name\":\"R1A\",\"longName\":\"1A\",\"foreColor\":\"000000\",\"backColor\":\"000000\"},{\"id\":2,\"name\":\"R1B\",\"longName\":\"1B\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]}";
+            //data = "[{\"id\":1,\"name\":\"R1A\",\"longName\":\"1A\",\"foreColor\":\"000000\",\"backColor\":\"000000\"},{\"id\":2,\"name\":\"R1B\",\"longName\":\"1B\",\"foreColor\":\"000000\",\"backColor\":\"000000\"}]}";
             rooms = new List<Types.Room>();
             data = data.Substring(2, data.Length - 4);
             String[] roomobjects = Regex.Split(data, "\\},\\{");
