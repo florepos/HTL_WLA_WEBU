@@ -754,7 +754,8 @@ namespace WebuntisAPI
             public int[] id;
             public int s;
         }
-
+        //! getTimeTableId
+        /*! */
         private TimeTableId getTimeTableId(String idString, int s, String data, char[] dataCharArr)
         {
             int start = 0;
@@ -847,7 +848,9 @@ namespace WebuntisAPI
             }
             return new Types.TimeTableElement();
         }
-        List<Types.TimeTableElement> getTimeTableElements()
+        //! getTimeTableElements
+        /*! get all Timetable Elements */
+        public List<Types.TimeTableElement> getTimeTableElements()
         {
             return timeTableElements;
         }
